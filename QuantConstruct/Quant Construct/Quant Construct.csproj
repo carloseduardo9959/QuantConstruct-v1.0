@@ -109,14 +109,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <None Include="Resources\tijolo_c520.jpg" />
-    <None Include="Resources\tijolo_b121424.jpg" />
-    <None Include="Resources\tijolo_b1539.jpg" />
-    <None Include="Resources\tijolo_b1529.jpg" />
-    <None Include="Resources\tijolo_b1229.jpg" />
-    <None Include="Resources\tijolo_b1029.jpg" />
-    <None Include="Resources\tijolo_b1020.jpg" />
-    <None Include="Resources\tijolo_b1019.jpg" />
+    <None Include="Resources\tijolo_c5201.jpg" />
+    <None Include="Resources\tijolo_b1214241.jpg" />
+    <None Include="Resources\tijolo_b15391.jpg" />
+    <None Include="Resources\tijolo_b15291.jpg" />
+    <None Include="Resources\tijolo_b12291.jpg" />
+    <None Include="Resources\tijolo_b10291.jpg" />
+    <None Include="Resources\tijolo_b10201.jpg" />
+    <None Include="Resources\tijolo_b10191.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

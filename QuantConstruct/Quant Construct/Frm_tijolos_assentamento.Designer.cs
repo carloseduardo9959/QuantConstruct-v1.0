@@ -139,6 +139,15 @@
             // 
             this.metroComboBox1.FormattingEnabled = true;
             this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "Tijolo - B12/29",
+            "Tijolo - B15/29",
+            "Tijolo - B15/39",
+            "Tijolo Baiano - B10/19",
+            "Tijolo Baiano - B10/29",
+            "Tijolo Paulista - B12/14/24",
+            "Tijolo Duplo - B10/20",
+            "Tijolo Comum - C5/20"});
             this.metroComboBox1.Location = new System.Drawing.Point(290, 154);
             this.metroComboBox1.Name = "metroComboBox1";
             this.metroComboBox1.Size = new System.Drawing.Size(137, 29);
