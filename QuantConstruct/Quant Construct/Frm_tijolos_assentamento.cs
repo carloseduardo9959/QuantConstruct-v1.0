@@ -16,5 +16,10 @@ namespace Quant_Construct
         {
             InitializeComponent();
         }
+
+        private void metroLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
