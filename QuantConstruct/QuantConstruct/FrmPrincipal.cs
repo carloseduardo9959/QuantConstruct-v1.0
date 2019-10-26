@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuantConstruct
 {
-    public partial class frmPrincipal : Form
+    public partial class frmPrincipal : MetroFramework.Forms.MetroForm
     {
         public frmPrincipal()
         {
