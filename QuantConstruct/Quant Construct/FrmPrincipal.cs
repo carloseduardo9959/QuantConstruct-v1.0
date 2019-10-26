@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuantConstruct
+namespace Quant_Construct
 {
-    public partial class frmPrincipal : MetroFramework.Forms.MetroForm
+    public partial class FrmPrincipal : MetroFramework.Forms.MetroForm
     {
-        public frmPrincipal()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }

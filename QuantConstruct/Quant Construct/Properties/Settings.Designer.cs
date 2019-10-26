@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuantConstruct.Properties
+namespace Quant_Construct.Properties
 {
 
 

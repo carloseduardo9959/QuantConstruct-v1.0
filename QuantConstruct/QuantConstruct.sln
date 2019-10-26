@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConstruct", "QuantConstruct\QuantConstruct.csproj", "{6FBD73E0-D5FE-431C-84B8-A667E227CFA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quant Construct", "Quant Construct\Quant Construct.csproj", "{B604B15C-78C7-4A19-BA9D-37F80C049AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FBD73E0-D5FE-431C-84B8-A667E227CFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FBD73E0-D5FE-431C-84B8-A667E227CFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FBD73E0-D5FE-431C-84B8-A667E227CFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FBD73E0-D5FE-431C-84B8-A667E227CFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B604B15C-78C7-4A19-BA9D-37F80C049AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B604B15C-78C7-4A19-BA9D-37F80C049AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B604B15C-78C7-4A19-BA9D-37F80C049AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B604B15C-78C7-4A19-BA9D-37F80C049AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
