@@ -113,6 +113,9 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTelhas.resx">
+      <DependentUpon>FrmTelhas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Contrapiso_CimentoeAreia.resx">
       <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,10 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <None Include="Resources\Img-Telhas\telha-romana-barro-com-preco-especial-D_NQ_NP_967902-MLB31837399750_082019-F.jpg" />
-    <None Include="Resources\Img-Telhas\telha_ceramica_americana_resinada_ceramica_bagatta-1024x799.png" />
-    <None Include="Resources\Img-Telhas\imagem-telha-francesa.jpg" />
-    <None Include="Resources\Img-Telhas\1101676_telha-portuguesa-resina-plus-barrobello_m1_636383251412496928.jpg" />
+    <None Include="Resources\Img-Telhas\romana.jpg" />
+    <None Include="Resources\Img-Telhas\portuguesa.jpg" />
+    <None Include="Resources\Img-Telhas\francesa.jpg" />
+    <None Include="Resources\Img-Telhas\americana.png" />
     <None Include="Resources\Img-Tijolos\tijolo_c5201.jpg" />
     <None Include="Resources\Img-Tijolos\tijolo_b1214241.jpg" />
     <None Include="Resources\Img-Tijolos\tijolo_b15391.jpg" />
