@@ -81,11 +81,11 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTelhasBarro.cs">
+    <Compile Include="FrmTelhas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTelhasBarro.Designer.cs">
-      <DependentUpon>FrmTelhasBarro.cs</DependentUpon>
+    <Compile Include="FrmTelhas.Designer.cs">
+      <DependentUpon>FrmTelhas.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Contrapiso_CimentoeAreia.cs">
       <SubType>Form</SubType>
@@ -112,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmTelhasBarro.resx">
-      <DependentUpon>FrmTelhasBarro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Contrapiso_CimentoeAreia.resx">
       <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
@@ -148,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <Content Include="Resources\Bitmap1.bmp" />
     <None Include="Resources\Img-Telhas\telha-romana-barro-com-preco-especial-D_NQ_NP_967902-MLB31837399750_082019-F.jpg" />
     <None Include="Resources\Img-Telhas\telha_ceramica_americana_resinada_ceramica_bagatta-1024x799.png" />
     <None Include="Resources\Img-Telhas\imagem-telha-francesa.jpg" />
