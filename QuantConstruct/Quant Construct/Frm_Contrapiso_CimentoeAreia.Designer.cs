@@ -105,28 +105,28 @@
             this.txtArea.Location = new System.Drawing.Point(176, 162);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(75, 23);
-            this.txtArea.TabIndex = 12;
+            this.txtArea.TabIndex = 4;
             // 
             // txtEspessura
             // 
             this.txtEspessura.Location = new System.Drawing.Point(176, 127);
             this.txtEspessura.Name = "txtEspessura";
             this.txtEspessura.Size = new System.Drawing.Size(75, 23);
-            this.txtEspessura.TabIndex = 13;
+            this.txtEspessura.TabIndex = 3;
             // 
             // txtAreia
             // 
             this.txtAreia.Location = new System.Drawing.Point(176, 92);
             this.txtAreia.Name = "txtAreia";
             this.txtAreia.Size = new System.Drawing.Size(75, 23);
-            this.txtAreia.TabIndex = 14;
+            this.txtAreia.TabIndex = 2;
             // 
             // txtCimento
             // 
             this.txtCimento.Location = new System.Drawing.Point(176, 57);
             this.txtCimento.Name = "txtCimento";
             this.txtCimento.Size = new System.Drawing.Size(75, 23);
-            this.txtCimento.TabIndex = 16;
+            this.txtCimento.TabIndex = 1;
             // 
             // metroLabel5
             // 

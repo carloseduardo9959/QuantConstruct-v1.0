@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmChapisco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChapisco.Designer.cs">
+      <DependentUpon>FrmChapisco.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPiso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmChapisco.resx">
+      <DependentUpon>FrmChapisco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPiso.resx">
       <DependentUpon>FrmPiso.cs</DependentUpon>
     </EmbeddedResource>

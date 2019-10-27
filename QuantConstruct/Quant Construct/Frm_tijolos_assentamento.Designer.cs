@@ -112,28 +112,28 @@
             this.txtCal.Location = new System.Drawing.Point(188, 123);
             this.txtCal.Name = "txtCal";
             this.txtCal.Size = new System.Drawing.Size(75, 23);
-            this.txtCal.TabIndex = 1;
+            this.txtCal.TabIndex = 2;
             // 
             // txtAreia
             // 
             this.txtAreia.Location = new System.Drawing.Point(188, 159);
             this.txtAreia.Name = "txtAreia";
             this.txtAreia.Size = new System.Drawing.Size(75, 23);
-            this.txtAreia.TabIndex = 1;
+            this.txtAreia.TabIndex = 3;
             // 
             // txtJunta
             // 
             this.txtJunta.Location = new System.Drawing.Point(188, 216);
             this.txtJunta.Name = "txtJunta";
             this.txtJunta.Size = new System.Drawing.Size(75, 23);
-            this.txtJunta.TabIndex = 1;
+            this.txtJunta.TabIndex = 4;
             // 
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(188, 252);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(75, 23);
-            this.txtArea.TabIndex = 1;
+            this.txtArea.TabIndex = 5;
             // 
             // metroComboBox1
             // 
