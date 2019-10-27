@@ -19,7 +19,7 @@ namespace Quant_Construct
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double QtdAreia = double.Parse(txtEspessura.Text) * double.Parse(txtArea.Text) * 1.05 / 101 0;
+            double QtdAreia = double.Parse(txtEspessura.Text) * double.Parse(txtArea.Text) * 1.05 / 1000;
             double QtdCimento = (QtdAreia / double.Parse(txtAreia.Text)) * 1400 / 50;
             lblQtdAreia.Text = QtdAreia.ToString("0.00");
             lblQtdCimento.Text = QtdCimento.ToString("0.0");

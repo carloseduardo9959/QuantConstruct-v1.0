@@ -22,7 +22,7 @@ namespace Quant_Construct
             double QtdAreia = double.Parse(txtEspessura.Text) * double.Parse(txtArea.Text) * 1.05 / 100;
             double QtdCimento = (QtdAreia / double.Parse(txtAreia.Text)) * 1400 / 50;
             lblQtdAreia.Text = QtdAreia.ToString("0.0");
-            lblQtdCimento.Text = QtdCimento.ToString("0.0");
+            lblQtdCimento.Text = QtdCimento.ToString("0");
         }
     }
 }
