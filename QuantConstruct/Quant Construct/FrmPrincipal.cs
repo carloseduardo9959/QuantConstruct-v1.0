@@ -16,5 +16,7 @@ namespace Quant_Construct
         {
             InitializeComponent();
         }
+
+       
     }
 }

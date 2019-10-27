@@ -81,6 +81,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTelhasBarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTelhasBarro.Designer.cs">
+      <DependentUpon>FrmTelhasBarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Contrapiso_CimentoeAreia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTelhasBarro.resx">
+      <DependentUpon>FrmTelhasBarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Contrapiso_CimentoeAreia.resx">
       <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,19 +124,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -139,14 +148,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <None Include="Resources\tijolo_c5201.jpg" />
-    <None Include="Resources\tijolo_b1214241.jpg" />
-    <None Include="Resources\tijolo_b15391.jpg" />
-    <None Include="Resources\tijolo_b15291.jpg" />
-    <None Include="Resources\tijolo_b12291.jpg" />
-    <None Include="Resources\tijolo_b10291.jpg" />
-    <None Include="Resources\tijolo_b10201.jpg" />
-    <None Include="Resources\tijolo_b10191.jpg" />
+    <Content Include="Resources\Bitmap1.bmp" />
+    <None Include="Resources\Img-Telhas\telha-romana-barro-com-preco-especial-D_NQ_NP_967902-MLB31837399750_082019-F.jpg" />
+    <None Include="Resources\Img-Telhas\telha_ceramica_americana_resinada_ceramica_bagatta-1024x799.png" />
+    <None Include="Resources\Img-Telhas\imagem-telha-francesa.jpg" />
+    <None Include="Resources\Img-Telhas\1101676_telha-portuguesa-resina-plus-barrobello_m1_636383251412496928.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_c5201.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b1214241.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b15391.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b15291.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b12291.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b10291.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b10201.jpg" />
+    <None Include="Resources\Img-Tijolos\tijolo_b10191.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
