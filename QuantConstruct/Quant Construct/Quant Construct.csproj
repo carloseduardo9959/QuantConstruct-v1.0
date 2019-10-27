@@ -57,17 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculo Piso.cs">
+    <Compile Include="FrmCalculoPiso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculo Piso.Designer.cs">
-      <DependentUpon>Calculo Piso.cs</DependentUpon>
+    <Compile Include="FrmCalculoPiso.Designer.cs">
+      <DependentUpon>FrmCalculoPiso.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Contrapiso_CimentoeAreia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Contrapiso_CimentoeAreia.Designer.cs">
+      <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_tijolos_assentamento.cs">
       <SubType>Form</SubType>
@@ -77,8 +83,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Calculo Piso.resx">
-      <DependentUpon>Calculo Piso.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCalculoPiso.resx">
+      <DependentUpon>FrmCalculoPiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Contrapiso_CimentoeAreia.resx">
+      <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_tijolos_assentamento.resx">
       <DependentUpon>Frm_tijolos_assentamento.cs</DependentUpon>
