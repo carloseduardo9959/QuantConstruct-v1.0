@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quant_Construct
 {
-    public partial class Piso : MetroFramework.Forms.MetroForm
+    public partial class FrmPiso : MetroFramework.Forms.MetroForm
     {
-        public Piso()
+        public FrmPiso()
         {
             InitializeComponent();
         }
@@ -32,7 +32,6 @@ namespace Quant_Construct
             //*****CALCULO REJUNTE*****
             double rejunte = piso / 3.5;
             lblQtdRejunte.Text = rejunte.ToString("0");
-
         }
     }
 }

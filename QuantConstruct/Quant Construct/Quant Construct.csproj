@@ -57,11 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCalculoPiso.cs">
+    <Compile Include="FrmPiso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCalculoPiso.Designer.cs">
-      <DependentUpon>FrmCalculoPiso.cs</DependentUpon>
+    <Compile Include="FrmPiso.Designer.cs">
+      <DependentUpon>FrmPiso.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -83,8 +83,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCalculoPiso.resx">
-      <DependentUpon>FrmCalculoPiso.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPiso.resx">
+      <DependentUpon>FrmPiso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Contrapiso_CimentoeAreia.resx">
       <DependentUpon>Frm_Contrapiso_CimentoeAreia.cs</DependentUpon>
