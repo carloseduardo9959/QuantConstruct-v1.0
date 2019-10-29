@@ -195,7 +195,7 @@
             this.groupBox1.Controls.Add(this.metroLabel6);
             this.groupBox1.Location = new System.Drawing.Point(23, 309);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(698, 114);
+            this.groupBox1.Size = new System.Drawing.Size(754, 114);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
