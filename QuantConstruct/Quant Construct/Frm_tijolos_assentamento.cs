@@ -17,16 +17,6 @@ namespace Quant_Construct
             InitializeComponent();
         }
 
-        private void Frm_tijolos_assentamento_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (metroComboBox1.SelectedIndex)
@@ -43,7 +33,7 @@ namespace Quant_Construct
                 case 3: //B10/19
                     pictureBox1.Image = Properties.Resources.tijolo_b10191;
                     break;
-                case 4: //B10/39
+                case 4: //B10/29
                     pictureBox1.Image = Properties.Resources.tijolo_b10291;
                     break;
                 case 5: //B12/14/24
@@ -62,39 +52,39 @@ namespace Quant_Construct
         private void cmdCalcular_Click(object sender, EventArgs e)
         {
             double areia = 0, tijolo = 0;
-            switch (metroComboBox1.SelectedItem)
+            switch (metroComboBox1.SelectedIndex)
             {
-                case 0:
-                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 0: //B12/29
+                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 1:
-                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 1: //B15/29
+                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 2:
-                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 39) * (1.07 / ((19 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 2: //B15/39
+                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 39) * (1.07 / ((19 + 1.5) * (39 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (39 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 3:
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 19) * (1.07 / ((19 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 3: //B10/19
+                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 19) * (1.07 / ((19 + 1.5) * (19 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (19 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 4:
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 4: //B10/29
+                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 5:
-                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 14) + 24) * (1.07 / ((14 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 5: //B12/14/24
+                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 14) + 24) * (1.07 / ((14 + 1.5) * (24 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((14 + 1.5) * (24 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 6:
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 9) + 19) * (1.07 / ((9 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
+                case 6: //B10/20
+                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 9) + 19) * (1.07 / ((9 + 1.5) * (19 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
                     tijolo = 1.07 / ((9 + 1.5) * (19 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
-                case 7:
-                    areia = (double.Parse(txtJunta.Text)) * 10 * ((2 * 5) + 20) * (1.07 / ((5 + 1.5) / 1000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.5;
-                    tijolo = 1.07 / ((5 + 1.5) * ( + 1.5) / 10000) * (double.Parse(txtArea.Text));
+                case 7: //C5/20
+                    areia = (double.Parse(txtJunta.Text)) * 10 * ((2 * 5) + 20) * (1.07 / ((5 + 1.5) * (20 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    tijolo = 1.07 / ((5 + 1.5) * (20 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
             }
             double cim = (areia / double.Parse(txtAreia.Text)) * 1400 / 50;
@@ -107,7 +97,17 @@ namespace Quant_Construct
 
         private void cmdLimpar_Click(object sender, EventArgs e)
         {
-            
+            lblAreia.Text = "";
+            lblCal.Text = "";
+            lblCimento.Text = "";
+            lblTijolo.Text = "";
+
+            txtArea.Text = "";
+            txtAreia.Text = "";
+            txtCal.Text = "";
+            txtCimento.Text = "";
+            txtJunta.Text = "";
+
         }
 
         

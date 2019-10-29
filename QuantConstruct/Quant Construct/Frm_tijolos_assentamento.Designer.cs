@@ -196,7 +196,6 @@
             this.lblCal.Name = "lblCal";
             this.lblCal.Size = new System.Drawing.Size(0, 0);
             this.lblCal.TabIndex = 0;
-            this.lblCal.Click += new System.EventHandler(this.metroLabel11_Click);
             // 
             // lblCimento
             // 
@@ -310,7 +309,6 @@
             this.Controls.Add(this.metroLabel1);
             this.Name = "Frm_tijolos_assentamento";
             this.Text = "Assentamento de Tijolos";
-            this.Load += new System.EventHandler(this.Frm_tijolos_assentamento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
