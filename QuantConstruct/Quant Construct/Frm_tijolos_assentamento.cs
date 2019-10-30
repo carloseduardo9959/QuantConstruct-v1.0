@@ -17,6 +17,10 @@ namespace Quant_Construct
             InitializeComponent();
         }
 
+        private void Frm_tijolos_assentamento_Load(object sender, EventArgs e)
+        {
+        }
+
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (metroComboBox1.SelectedIndex)
@@ -110,6 +114,11 @@ namespace Quant_Construct
             txtCimento.Text = "";
             txtJunta.Text = "";
 
+        }
+
+        private void cmdAjuda_Click(object sender, EventArgs e)
+        {
+            
         }
 
         
