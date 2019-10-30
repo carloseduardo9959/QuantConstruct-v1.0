@@ -52,47 +52,49 @@ namespace Quant_Construct
         private void cmdCalcular_Click(object sender, EventArgs e)
         {
             double areia = 0, tijolo = 0;
+            double junta = double.Parse(txtJunta.Text);
+            double Area = double.Parse(txtArea.Text);
             switch (metroComboBox1.SelectedIndex)
             {
                 case 0: //B12/29
-                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
-                    tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
+                    areia = junta * 11.5 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * Area / 10000000 * 1.05;
+                    tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * Area; 
                     break;
                 case 1: //B15/29
-                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
-                    tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
+                    areia = junta * 14 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * Area / 10000000 * 1.05;
+                    tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * Area;
                     break;
                 case 2: //B15/39
-                    areia = (double.Parse(txtJunta.Text)) * 14 * ((2 * 19) + 39) * (1.07 / ((19 + 1.5) * (39 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 14 * ((2 * 19) + 39) * (1.07 / ((19 + 1.5) * (39 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (39 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
                 case 3: //B10/19
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 19) * (1.07 / ((19 + 1.5) * (19 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 9 * ((2 * 19) + 19) * (1.07 / ((19 + 1.5) * (19 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (19 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
                 case 4: //B10/29
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 9 * ((2 * 19) + 29) * (1.07 / ((19 + 1.5) * (29 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((19 + 1.5) * (29 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
                 case 5: //B12/14/24
-                    areia = (double.Parse(txtJunta.Text)) * 11.5 * ((2 * 14) + 24) * (1.07 / ((14 + 1.5) * (24 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 11.5 * ((2 * 14) + 24) * (1.07 / ((14 + 1.5) * (24 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((14 + 1.5) * (24 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
                 case 6: //B10/20
-                    areia = (double.Parse(txtJunta.Text)) * 9 * ((2 * 9) + 19) * (1.07 / ((9 + 1.5) * (19 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 9 * ((2 * 9) + 19) * (1.07 / ((9 + 1.5) * (19 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((9 + 1.5) * (19 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
                 case 7: //C5/20
-                    areia = (double.Parse(txtJunta.Text)) * 10 * ((2 * 5) + 20) * (1.07 / ((5 + 1.5) * (20 + 1.5) / 10000)) * (double.Parse(txtArea.Text)) / 1000000 * 1.05;
+                    areia = junta * 10 * ((2 * 5) + 20) * (1.07 / ((5 + 1.5) * (20 + 1.5) / 10000)) * Area / 10000000 * 1.05;
                     tijolo = 1.07 / ((5 + 1.5) * (20 + 1.5) / 10000) * (double.Parse(txtArea.Text));
                     break;
             }
             double cim = (areia / double.Parse(txtAreia.Text)) * 1400 / 50;
-            double cal = ((areia / double.Parse(txtAreia.Text)) * (double.Parse(txtCal.Text) * 670)) * 20;
-            lblCimento.Text = cim.ToString();
-            lblCal.Text = cal.ToString();
-            lblAreia.Text = areia.ToString();
-            lblTijolo.Text = tijolo.ToString();
+            double cal = ((areia / (double.Parse(txtAreia.Text))) * ((double.Parse(txtCal.Text)) * 670)) / 20;
+            lblCimento.Text = cim.ToString("0.0");
+            lblCal.Text = cal.ToString("0.0");
+            lblAreia.Text = areia.ToString("0.0");
+            lblTijolo.Text = tijolo.ToString("0");
         }
 
         private void cmdLimpar_Click(object sender, EventArgs e)

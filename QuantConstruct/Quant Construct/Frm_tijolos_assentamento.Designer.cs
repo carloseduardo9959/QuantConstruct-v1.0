@@ -153,7 +153,7 @@
             this.metroComboBox1.Location = new System.Drawing.Point(282, 140);
             this.metroComboBox1.Name = "metroComboBox1";
             this.metroComboBox1.Size = new System.Drawing.Size(179, 29);
-            this.metroComboBox1.TabIndex = 3;
+            this.metroComboBox1.TabIndex = 6;
             this.metroComboBox1.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
             // groupBox1
@@ -263,7 +263,7 @@
             this.cmdCalcular.Location = new System.Drawing.Point(74, 271);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(135, 32);
-            this.cmdCalcular.TabIndex = 8;
+            this.cmdCalcular.TabIndex = 6;
             this.cmdCalcular.Text = "Calcular";
             this.cmdCalcular.Click += new System.EventHandler(this.cmdCalcular_Click);
             // 
