@@ -16,7 +16,7 @@ namespace Quant_Construct
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_tijolos_assentamento());
+            Application.Run(new FrmPisoConcreto());
         }
     }
 }
