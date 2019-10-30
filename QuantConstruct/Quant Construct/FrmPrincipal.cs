@@ -17,6 +17,10 @@ namespace Quant_Construct
             InitializeComponent();
         }
 
-       
+        private void cmdAssentamento_Click(object sender, EventArgs e)
+        {
+            Frm_tijolos_assentamento AT = new Frm_tijolos_assentamento();
+            AT.ShowDialog();
+        }
     }
 }
