@@ -118,16 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="americana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Telhas\americana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="francesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Telhas\francesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="romana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Telhas\romana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="portuguesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Telhas\portuguesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="romana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Telhas\romana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="francesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Telhas\francesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="americana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Telhas\americana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b10191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b10191.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b10201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b10201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b15291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b15291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b15391" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b15391.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b1214241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b1214241.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_c5201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_c5201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
