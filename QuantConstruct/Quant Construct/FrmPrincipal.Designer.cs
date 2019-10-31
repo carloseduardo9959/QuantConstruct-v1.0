@@ -30,12 +30,12 @@
         {
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.cmdAssentamento = new System.Windows.Forms.Button();
-            this.cmdChapisco = new System.Windows.Forms.Button();
-            this.Contrapiso = new System.Windows.Forms.Button();
-            this.cmdPiso = new System.Windows.Forms.Button();
-            this.cmdPisoConcreto = new System.Windows.Forms.Button();
             this.cmdTelhas = new System.Windows.Forms.Button();
+            this.cmdPisoConcreto = new System.Windows.Forms.Button();
+            this.cmdPiso = new System.Windows.Forms.Button();
+            this.Contrapiso = new System.Windows.Forms.Button();
+            this.cmdChapisco = new System.Windows.Forms.Button();
+            this.cmdAssentamento = new System.Windows.Forms.Button();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,13 +55,78 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(37, 75);
+            this.metroPanel1.Location = new System.Drawing.Point(36, 97);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(289, 328);
+            this.metroPanel1.Size = new System.Drawing.Size(289, 288);
             this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // cmdTelhas
+            // 
+            this.cmdTelhas.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmdTelhas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdTelhas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdTelhas.Location = new System.Drawing.Point(15, 232);
+            this.cmdTelhas.Name = "cmdTelhas";
+            this.cmdTelhas.Size = new System.Drawing.Size(257, 37);
+            this.cmdTelhas.TabIndex = 2;
+            this.cmdTelhas.Text = "Telhas";
+            this.cmdTelhas.UseVisualStyleBackColor = false;
+            this.cmdTelhas.Click += new System.EventHandler(this.cmdTelhas_Click);
+            // 
+            // cmdPisoConcreto
+            // 
+            this.cmdPisoConcreto.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdPisoConcreto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdPisoConcreto.Location = new System.Drawing.Point(15, 189);
+            this.cmdPisoConcreto.Name = "cmdPisoConcreto";
+            this.cmdPisoConcreto.Size = new System.Drawing.Size(257, 37);
+            this.cmdPisoConcreto.TabIndex = 2;
+            this.cmdPisoConcreto.Text = "Piso Concreto";
+            this.cmdPisoConcreto.UseVisualStyleBackColor = false;
+            this.cmdPisoConcreto.Click += new System.EventHandler(this.cmdPisoConcreto_Click);
+            // 
+            // cmdPiso
+            // 
+            this.cmdPiso.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmdPiso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdPiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdPiso.Location = new System.Drawing.Point(15, 146);
+            this.cmdPiso.Name = "cmdPiso";
+            this.cmdPiso.Size = new System.Drawing.Size(257, 37);
+            this.cmdPiso.TabIndex = 2;
+            this.cmdPiso.Text = "Piso";
+            this.cmdPiso.UseVisualStyleBackColor = false;
+            this.cmdPiso.Click += new System.EventHandler(this.cmdPiso_Click);
+            // 
+            // Contrapiso
+            // 
+            this.Contrapiso.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Contrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Contrapiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contrapiso.Location = new System.Drawing.Point(15, 103);
+            this.Contrapiso.Name = "Contrapiso";
+            this.Contrapiso.Size = new System.Drawing.Size(257, 37);
+            this.Contrapiso.TabIndex = 2;
+            this.Contrapiso.Text = "Contrapiso";
+            this.Contrapiso.UseVisualStyleBackColor = false;
+            this.Contrapiso.Click += new System.EventHandler(this.Contrapiso_Click);
+            // 
+            // cmdChapisco
+            // 
+            this.cmdChapisco.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmdChapisco.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdChapisco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdChapisco.Location = new System.Drawing.Point(15, 60);
+            this.cmdChapisco.Name = "cmdChapisco";
+            this.cmdChapisco.Size = new System.Drawing.Size(257, 37);
+            this.cmdChapisco.TabIndex = 2;
+            this.cmdChapisco.Text = "Chapisco";
+            this.cmdChapisco.UseVisualStyleBackColor = false;
+            this.cmdChapisco.Click += new System.EventHandler(this.cmdChapisco_Click);
             // 
             // cmdAssentamento
             // 
@@ -75,66 +140,6 @@
             this.cmdAssentamento.Text = "Assentamento de Tijolos";
             this.cmdAssentamento.UseVisualStyleBackColor = false;
             this.cmdAssentamento.Click += new System.EventHandler(this.cmdAssentamento_Click);
-            // 
-            // cmdChapisco
-            // 
-            this.cmdChapisco.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.cmdChapisco.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdChapisco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdChapisco.Location = new System.Drawing.Point(15, 60);
-            this.cmdChapisco.Name = "cmdChapisco";
-            this.cmdChapisco.Size = new System.Drawing.Size(257, 37);
-            this.cmdChapisco.TabIndex = 2;
-            this.cmdChapisco.Text = "Chapisco";
-            this.cmdChapisco.UseVisualStyleBackColor = false;
-            // 
-            // Contrapiso
-            // 
-            this.Contrapiso.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Contrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Contrapiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contrapiso.Location = new System.Drawing.Point(15, 103);
-            this.Contrapiso.Name = "Contrapiso";
-            this.Contrapiso.Size = new System.Drawing.Size(257, 37);
-            this.Contrapiso.TabIndex = 2;
-            this.Contrapiso.Text = "Contrapiso";
-            this.Contrapiso.UseVisualStyleBackColor = false;
-            // 
-            // cmdPiso
-            // 
-            this.cmdPiso.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.cmdPiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdPiso.Location = new System.Drawing.Point(15, 146);
-            this.cmdPiso.Name = "cmdPiso";
-            this.cmdPiso.Size = new System.Drawing.Size(257, 37);
-            this.cmdPiso.TabIndex = 2;
-            this.cmdPiso.Text = "Piso";
-            this.cmdPiso.UseVisualStyleBackColor = false;
-            // 
-            // cmdPisoConcreto
-            // 
-            this.cmdPisoConcreto.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPisoConcreto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdPisoConcreto.Location = new System.Drawing.Point(15, 189);
-            this.cmdPisoConcreto.Name = "cmdPisoConcreto";
-            this.cmdPisoConcreto.Size = new System.Drawing.Size(257, 37);
-            this.cmdPisoConcreto.TabIndex = 2;
-            this.cmdPisoConcreto.Text = "Piso Concreto";
-            this.cmdPisoConcreto.UseVisualStyleBackColor = false;
-            // 
-            // cmdTelhas
-            // 
-            this.cmdTelhas.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.cmdTelhas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdTelhas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdTelhas.Location = new System.Drawing.Point(15, 232);
-            this.cmdTelhas.Name = "cmdTelhas";
-            this.cmdTelhas.Size = new System.Drawing.Size(257, 37);
-            this.cmdTelhas.TabIndex = 2;
-            this.cmdTelhas.Text = "Telhas";
-            this.cmdTelhas.UseVisualStyleBackColor = false;
             // 
             // FrmPrincipal
             // 
