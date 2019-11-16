@@ -116,11 +116,11 @@ namespace Quant_Construct
 
         }
 
-        private void cmdAjuda_Click(object sender, EventArgs e)
+     
+        private void metroButton1_Click(object sender, EventArgs e)
         {
-            
+            FrmAjuda fa = new FrmAjuda();
+            fa.ShowDialog();
         }
-
-        
     }
 }

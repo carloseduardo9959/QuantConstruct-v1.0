@@ -24,5 +24,11 @@ namespace Quant_Construct
             lblQtdAreia.Text = QtdAreia.ToString("0.0");
             lblQtdCimento.Text = QtdCimento.ToString("0");
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            FrmAjuda fa = new FrmAjuda();
+            fa.ShowDialog();
+        }
     }
 }

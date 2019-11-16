@@ -31,6 +31,8 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnCalcular = new MetroFramework.Controls.MetroButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.txtBrita = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.txtArea = new MetroFramework.Controls.MetroTextBox();
@@ -43,14 +45,13 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblQtdBrita = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.lblQtdAreia = new MetroFramework.Controls.MetroLabel();
             this.lblQtdCimento = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
-            this.txtBrita = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
-            this.lblQtdBrita = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +101,22 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // txtBrita
+            // 
+            this.txtBrita.Location = new System.Drawing.Point(176, 108);
+            this.txtBrita.Name = "txtBrita";
+            this.txtBrita.Size = new System.Drawing.Size(75, 23);
+            this.txtBrita.TabIndex = 3;
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(14, 112);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(125, 19);
+            this.metroLabel10.TabIndex = 25;
+            this.metroLabel10.Text = "Proporção de Brita:";
             // 
             // metroLabel9
             // 
@@ -209,6 +226,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
             // 
+            // lblQtdBrita
+            // 
+            this.lblQtdBrita.AutoSize = true;
+            this.lblQtdBrita.Location = new System.Drawing.Point(263, 88);
+            this.lblQtdBrita.Name = "lblQtdBrita";
+            this.lblQtdBrita.Size = new System.Drawing.Size(16, 19);
+            this.lblQtdBrita.TabIndex = 2;
+            this.lblQtdBrita.Text = "0";
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(8, 88);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(166, 19);
+            this.metroLabel11.TabIndex = 1;
+            this.metroLabel11.Text = "Quantidade de Brita (m3) :";
+            // 
             // lblQtdAreia
             // 
             this.lblQtdAreia.AutoSize = true;
@@ -245,45 +280,21 @@
             this.metroLabel6.TabIndex = 0;
             this.metroLabel6.Text = "Quantidade de Cimento (saco de 50kg):";
             // 
-            // metroLabel10
+            // metroButton1
             // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(14, 112);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(125, 19);
-            this.metroLabel10.TabIndex = 25;
-            this.metroLabel10.Text = "Proporção de Brita:";
-            // 
-            // txtBrita
-            // 
-            this.txtBrita.Location = new System.Drawing.Point(176, 108);
-            this.txtBrita.Name = "txtBrita";
-            this.txtBrita.Size = new System.Drawing.Size(75, 23);
-            this.txtBrita.TabIndex = 3;
-            // 
-            // metroLabel11
-            // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(8, 88);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(166, 19);
-            this.metroLabel11.TabIndex = 1;
-            this.metroLabel11.Text = "Quantidade de Brita (m3) :";
-            // 
-            // lblQtdBrita
-            // 
-            this.lblQtdBrita.AutoSize = true;
-            this.lblQtdBrita.Location = new System.Drawing.Point(263, 88);
-            this.lblQtdBrita.Name = "lblQtdBrita";
-            this.lblQtdBrita.Size = new System.Drawing.Size(16, 19);
-            this.lblQtdBrita.TabIndex = 2;
-            this.lblQtdBrita.Text = "0";
+            this.metroButton1.Location = new System.Drawing.Point(715, 29);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(62, 23);
+            this.metroButton1.TabIndex = 27;
+            this.metroButton1.Text = "Ajuda";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // FrmPisoConcreto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
@@ -324,5 +335,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel lblQtdBrita;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

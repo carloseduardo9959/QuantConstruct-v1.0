@@ -47,6 +47,7 @@
             this.lblQtdCimento = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -236,11 +237,21 @@
             this.metroLabel6.TabIndex = 0;
             this.metroLabel6.Text = "Quantidade de Cimento (saco de 50kg):";
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(729, 35);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(62, 23);
+            this.metroButton1.TabIndex = 28;
+            this.metroButton1.Text = "Ajuda";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // FrmChapisco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
@@ -277,5 +288,6 @@
         private MetroFramework.Controls.MetroLabel lblQtdCimento;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

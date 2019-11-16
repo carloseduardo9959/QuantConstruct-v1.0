@@ -58,6 +58,7 @@
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -275,7 +276,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(427, 189);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(327, 203);
@@ -304,7 +305,7 @@
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(92, 60);
+            this.metroLabel12.Location = new System.Drawing.Point(23, 60);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(212, 19);
             this.metroLabel12.TabIndex = 11;
@@ -313,7 +314,7 @@
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(92, 79);
+            this.metroLabel13.Location = new System.Drawing.Point(23, 79);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(352, 19);
             this.metroLabel13.TabIndex = 11;
@@ -322,7 +323,7 @@
             // metroLabel15
             // 
             this.metroLabel15.AutoSize = true;
-            this.metroLabel15.Location = new System.Drawing.Point(480, 60);
+            this.metroLabel15.Location = new System.Drawing.Point(411, 60);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(286, 19);
             this.metroLabel15.TabIndex = 11;
@@ -331,17 +332,27 @@
             // metroLabel16
             // 
             this.metroLabel16.AutoSize = true;
-            this.metroLabel16.Location = new System.Drawing.Point(480, 79);
+            this.metroLabel16.Location = new System.Drawing.Point(411, 79);
             this.metroLabel16.Name = "metroLabel16";
             this.metroLabel16.Size = new System.Drawing.Size(288, 19);
             this.metroLabel16.TabIndex = 11;
             this.metroLabel16.Text = "- Massa para assentar tijolos mais utilizada: 1:1:3";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(820, 39);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(62, 23);
+            this.metroButton1.TabIndex = 29;
+            this.metroButton1.Text = "Ajuda";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // Frm_tijolos_assentamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 557);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel16);
             this.Controls.Add(this.metroLabel15);
@@ -407,5 +418,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel13;
         private MetroFramework.Controls.MetroLabel metroLabel15;
         private MetroFramework.Controls.MetroLabel metroLabel16;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

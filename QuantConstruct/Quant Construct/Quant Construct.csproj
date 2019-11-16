@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjuda.Designer.cs">
+      <DependentUpon>FrmAjuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmChapisco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAjuda.resx">
+      <DependentUpon>FrmAjuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmChapisco.resx">
       <DependentUpon>FrmChapisco.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +157,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Img-Tijolos\material-de-construcao.png" />
+    <None Include="Resources\Img-Telhas\telha.png" />
     <None Include="Resources\Img-Telhas\romana.jpg" />
     <None Include="Resources\Img-Telhas\portuguesa.jpg" />
     <None Include="Resources\Img-Telhas\francesa.jpg" />

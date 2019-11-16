@@ -26,5 +26,11 @@ namespace Quant_Construct
             lblQtdBrita.Text = QtdBrita.ToString("0.00");
             lblQtdCimento.Text = QtdCimento.ToString("0");
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            FrmAjuda fa = new FrmAjuda();
+            fa.ShowDialog();
+        }
     }
 }
