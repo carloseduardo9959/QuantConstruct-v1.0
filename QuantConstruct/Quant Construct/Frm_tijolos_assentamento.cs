@@ -20,8 +20,8 @@ namespace Quant_Construct
 
         private void Frm_tijolos_assentamento_Load(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
             pcbxImpressao.Enabled = false;
+            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");            
         }
 
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -222,7 +222,7 @@ namespace Quant_Construct
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
-            contador += 3;
+            contador += 2;
             linha = "Quantidade de Cimento: " + lblCimento.Text.ToString() + " (saco de 50kg)";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);

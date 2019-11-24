@@ -30,8 +30,8 @@ namespace Quant_Construct
        
         private void Frm_Contrapiso_CimentoeAreia_Load(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
             pcbxImpressao.Enabled = false;
+            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
         }
 
         private void cmdAjuda_Click(object sender, EventArgs e)

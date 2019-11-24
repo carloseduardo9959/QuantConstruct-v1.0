@@ -38,6 +38,7 @@
             // 
             // cmdAssentamentoTijolo
             // 
+            this.cmdAssentamentoTijolo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdAssentamentoTijolo.Location = new System.Drawing.Point(36, 113);
             this.cmdAssentamentoTijolo.Name = "cmdAssentamentoTijolo";
             this.cmdAssentamentoTijolo.Size = new System.Drawing.Size(253, 68);
@@ -50,6 +51,7 @@
             // 
             // cmdChapisco
             // 
+            this.cmdChapisco.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdChapisco.Location = new System.Drawing.Point(36, 189);
             this.cmdChapisco.Name = "cmdChapisco";
             this.cmdChapisco.Size = new System.Drawing.Size(178, 68);
@@ -62,6 +64,7 @@
             // 
             // cmdPiso
             // 
+            this.cmdPiso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdPiso.Location = new System.Drawing.Point(294, 113);
             this.cmdPiso.Name = "cmdPiso";
             this.cmdPiso.Size = new System.Drawing.Size(106, 68);
@@ -74,6 +77,7 @@
             // 
             // cmdContrapiso
             // 
+            this.cmdContrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdContrapiso.Location = new System.Drawing.Point(222, 189);
             this.cmdContrapiso.Name = "cmdContrapiso";
             this.cmdContrapiso.Size = new System.Drawing.Size(178, 68);
@@ -86,6 +90,7 @@
             // 
             // cmdPisoConcreto
             // 
+            this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdPisoConcreto.Location = new System.Drawing.Point(36, 269);
             this.cmdPisoConcreto.Name = "cmdPisoConcreto";
             this.cmdPisoConcreto.Size = new System.Drawing.Size(212, 68);
@@ -98,6 +103,7 @@
             // 
             // cmdTelha
             // 
+            this.cmdTelha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdTelha.Location = new System.Drawing.Point(253, 269);
             this.cmdTelha.Name = "cmdTelha";
             this.cmdTelha.Size = new System.Drawing.Size(147, 68);

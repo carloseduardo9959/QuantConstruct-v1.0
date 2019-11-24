@@ -68,8 +68,8 @@ namespace Quant_Construct
 
         private void FrmTelhas_Load(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
             pcbxImpressao.Enabled = false;
+            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
         }
 
         private void pcbxImpressao_Click(object sender, EventArgs e)
@@ -137,7 +137,7 @@ namespace Quant_Construct
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
-            contador += 3;
+            contador += 2;
             linha = "Quantidade de Telhas: " + lblQtdTelhas.Text.ToString() + " (un)";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
