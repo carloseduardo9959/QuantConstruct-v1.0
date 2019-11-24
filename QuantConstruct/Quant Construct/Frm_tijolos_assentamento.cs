@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Quant_Construct
 {
@@ -19,6 +20,8 @@ namespace Quant_Construct
 
         private void Frm_tijolos_assentamento_Load(object sender, EventArgs e)
         {
+            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
+            pcbxImpressao.Enabled = false;
         }
 
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -55,6 +58,7 @@ namespace Quant_Construct
 
         private void cmdCalcular_Click(object sender, EventArgs e)
         {
+            pcbxImpressao.Enabled = true;
             double areia = 0, tijolo = 0;
             double junta = double.Parse(txtJunta.Text);
             double Area = double.Parse(txtArea.Text);
@@ -114,6 +118,7 @@ namespace Quant_Construct
             txtCimento.Text = "";
             txtJunta.Text = "";
 
+            pcbxImpressao.Enabled = false;
         }
 
      
@@ -121,6 +126,121 @@ namespace Quant_Construct
         {
             FrmAjuda fa = new FrmAjuda();
             fa.ShowDialog();
+        }
+
+        private void pcbxImpressao_Click(object sender, EventArgs e)
+        {
+            //cria o objeto de impressão
+            PrintDocument pd = new PrintDocument();
+            pd.DocumentName = "Relatório de Estoque de Alimentos por Receita";
+            pd.PrintPage += Imprimir;
+            //cria objeto preview
+            PrintPreviewDialog ppd = new PrintPreviewDialog();
+            //associa dois objetos
+            ppd.Document = pd;
+            ppd.ShowDialog();
+        }
+
+        private void Imprimir(object sender, PrintPageEventArgs ev)
+        {
+            //Configuração das dimenções da página
+            float posicaoVertical = 0;
+            float contador = 0;
+            float margemSuperior = 35;
+            float margemEsquerda = 20;
+            float alturaFonte = 0;
+            string linha = "";
+
+            Font fonte = new Font("Arial", 16);
+            alturaFonte = fonte.GetHeight(ev.Graphics);
+
+            //Título 
+            linha = "Cálculo de Assentamento de Tijolos";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+            contador += 3;
+            
+            margemSuperior = 26;
+
+            switch (metroComboBox1.SelectedIndex)
+            {
+                case 0: //B12/29
+                    linha = "Tijolo - B12/29";
+                    break;
+                case 1: //B15/29
+                    linha = "Tijolo - B15/29";
+                    break;
+                case 2: //B15/39
+                    linha = "Tijolo - B15/39";
+                    break;
+                case 3: //B10/19
+                    linha = "Tijolo Baiano - B10/19";
+                    break;
+                case 4: //B10/29
+                    linha = "Tijolo Baiano - B10/29";
+                    break;
+                case 5: //B12/14/24
+                    linha = "Tijolo Paulista - B12/14/24";
+                    break;
+                case 6: //B10/20
+                    linha = "Tijolo Duplo - B10/20";
+                    break;
+                case 7: //C5/20
+                    linha = "Tijolo Comum - C5/20";
+                    break;
+            }
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Proporção de Cimento: " + txtCimento.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Proporção de Cal: " + txtCal.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Proporção de Areia: " + txtAreia.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador += 2;
+            linha = "Largura da junta: " + txtJunta.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Área da parede: " + txtArea.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "___________________________________________________________________________________________";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador += 3;
+            linha = "Quantidade de Cimento: " + lblCimento.Text.ToString() + " (saco de 50kg";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Quantidade de Cal: " + lblCal.Text.ToString() + " (saco de 20kg";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Quantidade de Areia (m3): " + lblAreia.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Quantidade de tijolos (unidade): " + lblTijolo.Text.ToString();
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
         }
     }
 }
