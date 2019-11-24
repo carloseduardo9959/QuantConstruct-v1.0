@@ -116,7 +116,10 @@ namespace Quant_Construct
 
         }
 
-     
+        private void metroLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

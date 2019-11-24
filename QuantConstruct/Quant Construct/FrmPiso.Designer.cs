@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPiso));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblQtdRejunte = new MetroFramework.Controls.MetroLabel();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.lblQtdAgamassa = new MetroFramework.Controls.MetroLabel();
@@ -51,10 +52,9 @@
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -66,12 +66,25 @@
             this.groupBox1.Controls.Add(this.lblQtdPiso);
             this.groupBox1.Controls.Add(this.metroLabel14);
             this.groupBox1.Controls.Add(this.metroLabel15);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(22, 309);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(698, 114);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(627, 49);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 30;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblQtdRejunte
             // 
@@ -260,23 +273,11 @@
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Largura (metros) :";
             // 
-            // pcbxImpressao
-            // 
-            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(627, 49);
-            this.pcbxImpressao.Name = "pcbxImpressao";
-            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
-            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbxImpressao.TabIndex = 30;
-            this.pcbxImpressao.TabStop = false;
-            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
-            // 
             // FrmPiso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(740, 442);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.btnCalcular);
@@ -286,9 +287,9 @@
             this.Load += new System.EventHandler(this.FrmPiso_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

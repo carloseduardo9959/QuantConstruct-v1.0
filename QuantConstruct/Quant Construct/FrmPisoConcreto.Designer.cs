@@ -47,6 +47,7 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblQtdBrita = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.lblQtdAreia = new MetroFramework.Controls.MetroLabel();
@@ -55,7 +56,6 @@
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
@@ -109,7 +109,7 @@
             // 
             // txtBrita
             // 
-            this.txtBrita.Location = new System.Drawing.Point(176, 108);
+            this.txtBrita.Location = new System.Drawing.Point(176, 120);
             this.txtBrita.Name = "txtBrita";
             this.txtBrita.Size = new System.Drawing.Size(75, 23);
             this.txtBrita.TabIndex = 3;
@@ -117,7 +117,7 @@
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(14, 112);
+            this.metroLabel10.Location = new System.Drawing.Point(14, 120);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(125, 19);
             this.metroLabel10.TabIndex = 25;
@@ -126,7 +126,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(257, 141);
+            this.metroLabel9.Location = new System.Drawing.Point(257, 153);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(30, 19);
             this.metroLabel9.TabIndex = 24;
@@ -135,7 +135,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(257, 170);
+            this.metroLabel7.Location = new System.Drawing.Point(257, 182);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(31, 19);
             this.metroLabel7.TabIndex = 23;
@@ -143,7 +143,7 @@
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(176, 166);
+            this.txtArea.Location = new System.Drawing.Point(176, 178);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(75, 23);
             this.txtArea.TabIndex = 5;
@@ -161,7 +161,7 @@
             // 
             // txtEspessura
             // 
-            this.txtEspessura.Location = new System.Drawing.Point(176, 137);
+            this.txtEspessura.Location = new System.Drawing.Point(176, 149);
             this.txtEspessura.Name = "txtEspessura";
             this.txtEspessura.Size = new System.Drawing.Size(75, 23);
             this.txtEspessura.TabIndex = 4;
@@ -169,7 +169,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(14, 54);
+            this.metroLabel1.Location = new System.Drawing.Point(14, 62);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(148, 19);
             this.metroLabel1.TabIndex = 11;
@@ -177,7 +177,7 @@
             // 
             // txtAreia
             // 
-            this.txtAreia.Location = new System.Drawing.Point(176, 78);
+            this.txtAreia.Location = new System.Drawing.Point(176, 90);
             this.txtAreia.Name = "txtAreia";
             this.txtAreia.Size = new System.Drawing.Size(75, 23);
             this.txtAreia.TabIndex = 2;
@@ -185,7 +185,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(14, 82);
+            this.metroLabel3.Location = new System.Drawing.Point(14, 90);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(129, 19);
             this.metroLabel3.TabIndex = 9;
@@ -193,7 +193,7 @@
             // 
             // txtCimento
             // 
-            this.txtCimento.Location = new System.Drawing.Point(176, 50);
+            this.txtCimento.Location = new System.Drawing.Point(176, 62);
             this.txtCimento.Name = "txtCimento";
             this.txtCimento.Size = new System.Drawing.Size(75, 23);
             this.txtCimento.TabIndex = 1;
@@ -201,7 +201,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(14, 141);
+            this.metroLabel4.Location = new System.Drawing.Point(14, 149);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(156, 19);
             this.metroLabel4.TabIndex = 8;
@@ -210,7 +210,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(18, 170);
+            this.metroLabel5.Location = new System.Drawing.Point(14, 178);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(125, 19);
             this.metroLabel5.TabIndex = 7;
@@ -225,12 +225,25 @@
             this.groupBox1.Controls.Add(this.lblQtdCimento);
             this.groupBox1.Controls.Add(this.metroLabel8);
             this.groupBox1.Controls.Add(this.metroLabel6);
-            this.groupBox1.Location = new System.Drawing.Point(23, 323);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBox1.Location = new System.Drawing.Point(23, 332);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(698, 114);
+            this.groupBox1.Size = new System.Drawing.Size(762, 114);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(689, 45);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 30;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblQtdBrita
             // 
@@ -295,23 +308,11 @@
             this.metroButton1.Text = "Ajuda";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // pcbxImpressao
-            // 
-            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(627, 45);
-            this.pcbxImpressao.Name = "pcbxImpressao";
-            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
-            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbxImpressao.TabIndex = 30;
-            this.pcbxImpressao.TabStop = false;
-            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
-            // 
             // FrmPisoConcreto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 460);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btnCalcular);

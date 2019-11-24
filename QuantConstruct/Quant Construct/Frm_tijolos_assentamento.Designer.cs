@@ -178,9 +178,10 @@
             this.groupBox1.Controls.Add(this.metroLabel8);
             this.groupBox1.Controls.Add(this.metroLabel7);
             this.groupBox1.Controls.Add(this.metroLabel6);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 398);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(878, 147);
+            this.groupBox1.Size = new System.Drawing.Size(837, 147);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
@@ -189,7 +190,7 @@
             // 
             this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(803, 77);
+            this.pcbxImpressao.Location = new System.Drawing.Point(762, 77);
             this.pcbxImpressao.Name = "pcbxImpressao";
             this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
             this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -285,7 +286,7 @@
             // 
             // cmdLimpar
             // 
-            this.cmdLimpar.Location = new System.Drawing.Point(815, 369);
+            this.cmdLimpar.Location = new System.Drawing.Point(774, 369);
             this.cmdLimpar.Name = "cmdLimpar";
             this.cmdLimpar.Size = new System.Drawing.Size(75, 23);
             this.cmdLimpar.TabIndex = 9;
@@ -358,22 +359,18 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(820, 39);
+            this.metroButton1.Location = new System.Drawing.Point(787, 46);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(62, 23);
             this.metroButton1.TabIndex = 29;
             this.metroButton1.Text = "Ajuda";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // toolTip1
-            // 
-
-            // 
             // Frm_tijolos_assentamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 557);
+            this.ClientSize = new System.Drawing.Size(865, 557);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel16);

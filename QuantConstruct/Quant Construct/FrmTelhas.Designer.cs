@@ -36,17 +36,17 @@
             this.cbTelhas = new MetroFramework.Controls.MetroComboBox();
             this.btnCalcular = new MetroFramework.Controls.MetroButton();
             this.lblQtdTelha = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblQtdTelhas = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.lblQtdTelha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             this.SuspendLayout();
             // 
             // txtArea
@@ -91,7 +91,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(234, 222);
+            this.btnCalcular.Location = new System.Drawing.Point(234, 243);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(118, 30);
             this.btnCalcular.TabIndex = 23;
@@ -103,12 +103,25 @@
             this.lblQtdTelha.Controls.Add(this.pcbxImpressao);
             this.lblQtdTelha.Controls.Add(this.lblQtdTelhas);
             this.lblQtdTelha.Controls.Add(this.metroLabel6);
-            this.lblQtdTelha.Location = new System.Drawing.Point(23, 267);
+            this.lblQtdTelha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lblQtdTelha.Location = new System.Drawing.Point(23, 303);
             this.lblQtdTelha.Name = "lblQtdTelha";
-            this.lblQtdTelha.Size = new System.Drawing.Size(687, 160);
+            this.lblQtdTelha.Size = new System.Drawing.Size(687, 114);
             this.lblQtdTelha.TabIndex = 24;
             this.lblQtdTelha.TabStop = false;
             this.lblQtdTelha.Text = "Telhas de Barro";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(616, 43);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 27;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblQtdTelhas
             // 
@@ -130,7 +143,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(487, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(487, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +161,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(23, 63);
+            this.metroPanel1.Location = new System.Drawing.Point(23, 84);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(329, 140);
             this.metroPanel1.TabIndex = 26;
@@ -167,23 +180,11 @@
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             // 
-            // pcbxImpressao
-            // 
-            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(616, 95);
-            this.pcbxImpressao.Name = "pcbxImpressao";
-            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
-            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbxImpressao.TabIndex = 27;
-            this.pcbxImpressao.TabStop = false;
-            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
-            // 
             // FrmTelhas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(727, 440);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblQtdTelha);
@@ -193,10 +194,10 @@
             this.Load += new System.EventHandler(this.FrmTelhas_Load);
             this.lblQtdTelha.ResumeLayout(false);
             this.lblQtdTelha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.ResumeLayout(false);
 
         }

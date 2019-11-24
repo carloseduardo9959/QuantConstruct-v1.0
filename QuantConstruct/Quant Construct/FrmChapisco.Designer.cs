@@ -200,7 +200,8 @@
             this.groupBox1.Controls.Add(this.lblQtdCimento);
             this.groupBox1.Controls.Add(this.metroLabel8);
             this.groupBox1.Controls.Add(this.metroLabel6);
-            this.groupBox1.Location = new System.Drawing.Point(23, 309);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBox1.Location = new System.Drawing.Point(23, 313);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(754, 114);
             this.groupBox1.TabIndex = 23;
@@ -257,7 +258,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(729, 35);
+            this.metroButton1.Location = new System.Drawing.Point(715, 37);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(62, 23);
             this.metroButton1.TabIndex = 28;
@@ -268,7 +269,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 442);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btnCalcular);

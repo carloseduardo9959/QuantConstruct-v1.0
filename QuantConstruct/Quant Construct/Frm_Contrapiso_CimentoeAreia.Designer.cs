@@ -66,7 +66,7 @@
             this.groupBox1.Controls.Add(this.metroLabel6);
             this.groupBox1.Location = new System.Drawing.Point(23, 313);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(698, 114);
+            this.groupBox1.Size = new System.Drawing.Size(754, 114);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
@@ -75,7 +75,7 @@
             // 
             this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(627, 49);
+            this.pcbxImpressao.Location = new System.Drawing.Point(683, 49);
             this.pcbxImpressao.Name = "pcbxImpressao";
             this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
             this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,28 +121,28 @@
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(176, 162);
+            this.txtArea.Location = new System.Drawing.Point(182, 166);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(75, 23);
             this.txtArea.TabIndex = 4;
             // 
             // txtEspessura
             // 
-            this.txtEspessura.Location = new System.Drawing.Point(176, 127);
+            this.txtEspessura.Location = new System.Drawing.Point(182, 131);
             this.txtEspessura.Name = "txtEspessura";
             this.txtEspessura.Size = new System.Drawing.Size(75, 23);
             this.txtEspessura.TabIndex = 3;
             // 
             // txtAreia
             // 
-            this.txtAreia.Location = new System.Drawing.Point(176, 92);
+            this.txtAreia.Location = new System.Drawing.Point(182, 96);
             this.txtAreia.Name = "txtAreia";
             this.txtAreia.Size = new System.Drawing.Size(75, 23);
             this.txtAreia.TabIndex = 2;
             // 
             // txtCimento
             // 
-            this.txtCimento.Location = new System.Drawing.Point(176, 57);
+            this.txtCimento.Location = new System.Drawing.Point(182, 61);
             this.txtCimento.Name = "txtCimento";
             this.txtCimento.Size = new System.Drawing.Size(75, 23);
             this.txtCimento.TabIndex = 1;
@@ -150,16 +150,17 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(14, 166);
+            this.metroLabel5.Location = new System.Drawing.Point(20, 166);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(125, 19);
             this.metroLabel5.TabIndex = 7;
             this.metroLabel5.Text = "Área do contrapiso:";
+            this.metroLabel5.Click += new System.EventHandler(this.metroLabel5_Click);
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(14, 127);
+            this.metroLabel4.Location = new System.Drawing.Point(20, 131);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(156, 19);
             this.metroLabel4.TabIndex = 8;
@@ -168,7 +169,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(14, 92);
+            this.metroLabel3.Location = new System.Drawing.Point(20, 96);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(129, 19);
             this.metroLabel3.TabIndex = 9;
@@ -177,7 +178,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(14, 57);
+            this.metroLabel1.Location = new System.Drawing.Point(20, 61);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(148, 19);
             this.metroLabel1.TabIndex = 11;
@@ -211,7 +212,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(257, 131);
+            this.metroLabel9.Location = new System.Drawing.Point(263, 135);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(30, 19);
             this.metroLabel9.TabIndex = 24;
@@ -220,7 +221,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(257, 166);
+            this.metroLabel7.Location = new System.Drawing.Point(263, 170);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(31, 19);
             this.metroLabel7.TabIndex = 23;
@@ -239,7 +240,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(369, 277);
+            this.btnCalcular.Location = new System.Drawing.Point(378, 277);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(118, 30);
             this.btnCalcular.TabIndex = 21;
@@ -257,13 +258,12 @@
             // 
             // cmdAjuda
             // 
-            this.cmdAjuda.Location = new System.Drawing.Point(715, 44);
+            this.cmdAjuda.Location = new System.Drawing.Point(715, 43);
             this.cmdAjuda.Name = "cmdAjuda";
             this.cmdAjuda.Size = new System.Drawing.Size(62, 23);
             this.cmdAjuda.TabIndex = 28;
             this.cmdAjuda.Text = "Ajuda";
             this.cmdAjuda.Click += new System.EventHandler(this.cmdAjuda_Click);
-
             // 
             // Frm_Contrapiso_CimentoeAreia
             // 
