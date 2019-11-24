@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Contrapiso_CimentoeAreia));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblQtdAreia = new MetroFramework.Controls.MetroLabel();
             this.lblQtdCimento = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
@@ -47,13 +50,16 @@
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.btnCalcular = new MetroFramework.Controls.MetroButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.cmdAjuda = new MetroFramework.Controls.MetroButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pcbxImpressao);
             this.groupBox1.Controls.Add(this.lblQtdAreia);
             this.groupBox1.Controls.Add(this.lblQtdCimento);
             this.groupBox1.Controls.Add(this.metroLabel8);
@@ -64,6 +70,18 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(627, 49);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 29;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblQtdAreia
             // 
@@ -237,29 +255,32 @@
             this.metroLabel2.TabIndex = 22;
             this.metroLabel2.Text = " - A espessura do contrapiso varia entre 2 e 6 cm. Geralmente utiliza-se 3 cm.\r\n";
             // 
-            // metroButton1
+            // cmdAjuda
             // 
-            this.metroButton1.Location = new System.Drawing.Point(715, 44);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(62, 23);
-            this.metroButton1.TabIndex = 28;
-            this.metroButton1.Text = "Ajuda";
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.cmdAjuda.Location = new System.Drawing.Point(715, 44);
+            this.cmdAjuda.Name = "cmdAjuda";
+            this.cmdAjuda.Size = new System.Drawing.Size(62, 23);
+            this.cmdAjuda.TabIndex = 28;
+            this.cmdAjuda.Text = "Ajuda";
+            this.cmdAjuda.Click += new System.EventHandler(this.cmdAjuda_Click);
+
             // 
             // Frm_Contrapiso_CimentoeAreia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.cmdAjuda);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Frm_Contrapiso_CimentoeAreia";
             this.Text = "Contrapiso de Cimento e Areia";
+            this.Load += new System.EventHandler(this.Frm_Contrapiso_CimentoeAreia_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -288,6 +309,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel7;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton cmdAjuda;
+        private System.Windows.Forms.PictureBox pcbxImpressao;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

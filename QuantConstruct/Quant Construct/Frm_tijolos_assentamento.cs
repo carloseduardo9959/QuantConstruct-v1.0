@@ -132,7 +132,7 @@ namespace Quant_Construct
         {
             //cria o objeto de impressão
             PrintDocument pd = new PrintDocument();
-            pd.DocumentName = "Relatório de Estoque de Alimentos por Receita";
+            pd.DocumentName = "Calculo de Materiais para Construção";
             pd.PrintPage += Imprimir;
             //cria objeto preview
             PrintPreviewDialog ppd = new PrintPreviewDialog();
@@ -208,12 +208,12 @@ namespace Quant_Construct
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
             contador += 2;
-            linha = "Largura da junta: " + txtJunta.Text.ToString();
+            linha = "Largura da junta: " + txtJunta.Text.ToString() +" cm";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
             contador++;
-            linha = "Área da parede: " + txtArea.Text.ToString();
+            linha = "Área da parede: " + txtArea.Text.ToString()+" m2";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
@@ -223,12 +223,12 @@ namespace Quant_Construct
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
             contador += 3;
-            linha = "Quantidade de Cimento: " + lblCimento.Text.ToString() + " (saco de 50kg";
+            linha = "Quantidade de Cimento: " + lblCimento.Text.ToString() + " (saco de 50kg)";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
             contador++;
-            linha = "Quantidade de Cal: " + lblCal.Text.ToString() + " (saco de 20kg";
+            linha = "Quantidade de Cal: " + lblCal.Text.ToString() + " (saco de 20kg)";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
@@ -242,5 +242,7 @@ namespace Quant_Construct
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
         }
+
+       
     }
 }

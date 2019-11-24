@@ -42,6 +42,7 @@
             this.txtArea = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblTijolo = new MetroFramework.Controls.MetroLabel();
             this.lblAreia = new MetroFramework.Controls.MetroLabel();
             this.lblCal = new MetroFramework.Controls.MetroLabel();
@@ -61,11 +62,10 @@
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -184,6 +184,18 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(803, 77);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 1;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblTijolo
             // 
@@ -353,17 +365,9 @@
             this.metroButton1.Text = "Ajuda";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // pcbxImpressao
+            // toolTip1
             // 
-            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
-            this.pcbxImpressao.Location = new System.Drawing.Point(803, 77);
-            this.pcbxImpressao.Name = "pcbxImpressao";
-            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
-            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbxImpressao.TabIndex = 1;
-            this.pcbxImpressao.TabStop = false;
-            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
+
             // 
             // Frm_tijolos_assentamento
             // 
@@ -398,8 +402,8 @@
             this.Load += new System.EventHandler(this.Frm_tijolos_assentamento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

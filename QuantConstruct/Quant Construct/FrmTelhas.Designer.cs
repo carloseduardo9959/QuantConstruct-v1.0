@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelhas));
             this.txtArea = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
@@ -39,9 +41,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.lblQtdTelha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             this.SuspendLayout();
             // 
             // txtArea
@@ -95,6 +100,7 @@
             // 
             // lblQtdTelha
             // 
+            this.lblQtdTelha.Controls.Add(this.pcbxImpressao);
             this.lblQtdTelha.Controls.Add(this.lblQtdTelhas);
             this.lblQtdTelha.Controls.Add(this.metroLabel6);
             this.lblQtdTelha.Location = new System.Drawing.Point(23, 267);
@@ -161,6 +167,18 @@
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(616, 95);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 27;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
+            // 
             // FrmTelhas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,11 +190,13 @@
             this.Controls.Add(this.btnCalcular);
             this.Name = "FrmTelhas";
             this.Text = "Telhas de Barro";
+            this.Load += new System.EventHandler(this.FrmTelhas_Load);
             this.lblQtdTelha.ResumeLayout(false);
             this.lblQtdTelha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -194,5 +214,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private System.Windows.Forms.PictureBox pcbxImpressao;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

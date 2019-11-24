@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Quant_Construct
 {
@@ -32,6 +33,100 @@ namespace Quant_Construct
             //*****CALCULO REJUNTE*****
             double rejunte = piso / 3.5;
             lblQtdRejunte.Text = rejunte.ToString("0");
+            pcbxImpressao.Enabled = true;
+        }
+
+        private void FrmPiso_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pcbxImpressao, "Imprimir relatório");
+            pcbxImpressao.Enabled = false;
+        }
+
+        private void pcbxImpressao_Click(object sender, EventArgs e)
+        {
+            //cria o objeto de impressão
+            PrintDocument pd = new PrintDocument();
+            pd.DocumentName = "Calculo de Materiais para Construção";
+            pd.PrintPage += Imprimir;
+            //cria objeto preview
+            PrintPreviewDialog ppd = new PrintPreviewDialog();
+            //associa dois objetos
+            ppd.Document = pd;
+            ppd.ShowDialog();
+        }
+
+        private void Imprimir(object sender, PrintPageEventArgs ev)
+        {
+            //Configuração das dimenções da página
+            float posicaoVertical = 0;
+            float contador = 0;
+            float margemSuperior = 35;
+            float margemEsquerda = 20;
+            float alturaFonte = 0;
+            string linha = "";
+
+            Font fonte = new Font("Arial", 16);
+            alturaFonte = fonte.GetHeight(ev.Graphics);
+
+            //Título 
+            linha = "Pisos e Revestimentos";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+            contador += 3;
+
+            margemSuperior = 26;
+
+            linha = "Calculo de materiais para assentamento de pisos e revestimentos";
+
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Largura: " + txtLargura.Text.ToString() + " mt(s)";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Comprimento: " + txtComprimento.Text.ToString() + " mt(s)";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+   
+
+            contador++;
+            linha = "Porcentagem de Perda: " + txtRodape.Text.ToString() + " %";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "___________________________________________________________________________________________";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Área Total: " + (double.Parse(txtComprimento.Text) * double.Parse(txtLargura.Text)) + " m2";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Área com perda: " + ((double.Parse(txtComprimento.Text) * double.Parse(txtLargura.Text)) + (double.Parse(txtComprimento.Text) * double.Parse(txtLargura.Text))* int.Parse(txtRodape.Text)/100) + " m2";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador += 3;
+            linha = "Piso: " + lblQtdPiso.Text.ToString() + " m2";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Argamassa: " + lblQtdAgamassa.Text.ToString() + " (saco de 20kg)";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+            contador++;
+            linha = "Rejunte: " + lblQtdRejunte.Text.ToString() + " kg";
+            posicaoVertical = margemSuperior + contador * alturaFonte;
+            ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
         }
     }
 }

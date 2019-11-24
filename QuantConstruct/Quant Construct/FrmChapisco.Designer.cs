@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmChapisco));
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnCalcular = new MetroFramework.Controls.MetroButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -43,13 +45,16 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pcbxImpressao = new System.Windows.Forms.PictureBox();
             this.lblQtdAreia = new MetroFramework.Controls.MetroLabel();
             this.lblQtdCimento = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.metroPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel2
@@ -190,6 +195,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pcbxImpressao);
             this.groupBox1.Controls.Add(this.lblQtdAreia);
             this.groupBox1.Controls.Add(this.lblQtdCimento);
             this.groupBox1.Controls.Add(this.metroLabel8);
@@ -200,6 +206,18 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultado:";
+            // 
+            // pcbxImpressao
+            // 
+            this.pcbxImpressao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbxImpressao.Image = ((System.Drawing.Image)(resources.GetObject("pcbxImpressao.Image")));
+            this.pcbxImpressao.Location = new System.Drawing.Point(683, 49);
+            this.pcbxImpressao.Name = "pcbxImpressao";
+            this.pcbxImpressao.Size = new System.Drawing.Size(65, 59);
+            this.pcbxImpressao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbxImpressao.TabIndex = 30;
+            this.pcbxImpressao.TabStop = false;
+            this.pcbxImpressao.Click += new System.EventHandler(this.pcbxImpressao_Click);
             // 
             // lblQtdAreia
             // 
@@ -258,10 +276,12 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmChapisco";
             this.Text = "Chapisco";
+            this.Load += new System.EventHandler(this.FrmChapisco_Load);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +309,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox pcbxImpressao;
     }
 }
