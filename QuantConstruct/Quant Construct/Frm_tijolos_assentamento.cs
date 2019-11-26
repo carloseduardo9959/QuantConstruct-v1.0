@@ -168,33 +168,41 @@ namespace Quant_Construct
             {
                 case 0: //B12/29
                     linha = "Tijolo - B12/29";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b12291, 430, 240, 280, 155);
                     break;
                 case 1: //B15/29
                     linha = "Tijolo - B15/29";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b15291, 430, 240, 280, 155);
                     break;
                 case 2: //B15/39
                     linha = "Tijolo - B15/39";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b15391, 430, 240, 280, 155);
                     break;
                 case 3: //B10/19
                     linha = "Tijolo Baiano - B10/19";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b10191, 430, 240, 280, 155);
                     break;
                 case 4: //B10/29
                     linha = "Tijolo Baiano - B10/29";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b10291, 430, 240, 280, 155);
                     break;
                 case 5: //B12/14/24
                     linha = "Tijolo Paulista - B12/14/24";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b1214241, 430, 240, 280, 155);
                     break;
                 case 6: //B10/20
                     linha = "Tijolo Duplo - B10/20";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_b10201, 430, 240, 280, 155);
                     break;
                 case 7: //C5/20
                     linha = "Tijolo Comum - C5/20";
+                    ev.Graphics.DrawImage(Properties.Resources.tijolo_c5201, 430, 240, 280, 155);
                     break;
             }
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
 
-            contador++;
+            contador += 2;
             linha = "Proporção de Cimento: " + txtCimento.Text.ToString();
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);

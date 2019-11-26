@@ -89,7 +89,7 @@ namespace Quant_Construct
         { 
             //Configuração das dimenções da página
             float posicaoVertical = 0;
-            float contador = 8;
+            float contador = 9;
             float margemSuperior = 35;
             float margemEsquerda = 20;
             float alturaFonte = 0;
@@ -112,6 +112,7 @@ namespace Quant_Construct
             {
                 case 0: 
                     linha = "Telha Americana";
+                    ev.Graphics.DrawImage(Properties.Resources.americana, 430, 240, 275, 150);
                     break;
                 case 1: 
                     linha = "Telha Francesa";
@@ -129,7 +130,7 @@ namespace Quant_Construct
            // ev.Graphics.DrawImage(this.pictureBox1.Image, margemEsquerda, posicaoVertical);
 
 
-            contador++;
+            contador += 4;
             linha = "Área do telhado: " + txtArea.Text.ToString() + " m2";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
