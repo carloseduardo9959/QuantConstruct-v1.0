@@ -145,22 +145,24 @@ namespace Quant_Construct
         {
             //Configuração das dimenções da página
             float posicaoVertical = 0;
-            float contador = 0;
+            float contador = 8;
             float margemSuperior = 35;
             float margemEsquerda = 20;
             float alturaFonte = 0;
             string linha = "";
 
-            Font fonte = new Font("Arial", 16);
+            Font fonte = new Font("Arial", 18);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
+            ev.Graphics.DrawImage(Properties.Resources.CAPA, 5, -140, 840, 580);
+
             //Título 
-            linha = "Cálculo de Assentamento de Tijolos";
+            /*linha = "Cálculo de Assentamento de Tijolos";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
-            contador += 3;
+            contador += 3;*/
             
-            margemSuperior = 26;
+            margemSuperior = 30;
 
             switch (metroComboBox1.SelectedIndex)
             {

@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\CAPA.png" />
     <None Include="Resources\Img-Tijolos\material-de-construcao.png" />
     <None Include="Resources\Img-Telhas\telha.png" />
     <None Include="Resources\Img-Telhas\romana.jpg" />

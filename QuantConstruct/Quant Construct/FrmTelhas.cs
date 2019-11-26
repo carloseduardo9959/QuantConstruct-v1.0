@@ -86,7 +86,7 @@ namespace Quant_Construct
         }
 
         private void Imprimir(object sender, PrintPageEventArgs ev)
-        {
+        { 
             //Configuração das dimenções da página
             float posicaoVertical = 0;
             float contador = 0;
