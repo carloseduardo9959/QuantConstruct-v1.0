@@ -151,7 +151,7 @@ namespace Quant_Construct
             float alturaFonte = 0;
             string linha = "";
 
-            Font fonte = new Font("Arial", 18);
+            Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
             ev.Graphics.DrawImage(Properties.Resources.CAPA, 5, -140, 840, 580);

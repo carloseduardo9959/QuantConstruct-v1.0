@@ -130,14 +130,14 @@
   <data name="material-de-construcao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\material-de-construcao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tijolo_c5201" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Tijolos\tijolo_c5201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CAPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tijolo_b10201" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\tijolo_b10201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Tijolos\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tijolo_b15291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\tijolo_b15291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,19 +151,34 @@
   <data name="tijolo_b10191" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\tijolo_b10191.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="francesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Telhas\francesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="portuguesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Telhas\portuguesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="material-de-construcao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\material-de-construcao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Tijolos\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="francesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Telhas\francesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tijolo_c5201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_c5201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CAPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAPA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CAPA-TELHAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-TELHAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAPA-PISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-PISO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAPA-CONTRAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-CONTRAP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAPA-CONCRETO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-CONCRETO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAPA-CHAPISCO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-CHAPISCO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

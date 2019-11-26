@@ -57,7 +57,7 @@ namespace Quant_Construct
         {
             //Configuração das dimenções da página
             float posicaoVertical = 0;
-            float contador = 0;
+            float contador = 8;
             float margemSuperior = 35;
             float margemEsquerda = 20;
             float alturaFonte = 0;
@@ -66,13 +66,15 @@ namespace Quant_Construct
             Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
+            ev.Graphics.DrawImage(Properties.Resources.CAPA_CHAPISCO, 5, -140, 840, 580);
+
             //Título 
-            linha = "Chapisco";
+            /*linha = "Chapisco";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
-            contador += 3;
+            contador += 3;*/
 
-            margemSuperior = 26;
+            margemSuperior = 30;
 
             linha = "Calculo de materiais para Chapisco";
 

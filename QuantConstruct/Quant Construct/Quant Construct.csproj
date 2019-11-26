@@ -157,6 +157,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\CAPA-CHAPISCO.png" />
+    <None Include="Resources\CAPA-CONCRETO.png" />
+    <None Include="Resources\CAPA-CONTRAP.png" />
+    <None Include="Resources\CAPA-PISO.png" />
+    <None Include="Resources\CAPA-TELHAS.png" />
     <None Include="Resources\CAPA.png" />
     <None Include="Resources\Img-Tijolos\material-de-construcao.png" />
     <None Include="Resources\Img-Telhas\telha.png" />

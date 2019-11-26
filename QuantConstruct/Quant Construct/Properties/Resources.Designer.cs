@@ -83,6 +83,56 @@ namespace Quant_Construct.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CAPA_CHAPISCO {
+            get {
+                object obj = ResourceManager.GetObject("CAPA-CHAPISCO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAPA_CONCRETO {
+            get {
+                object obj = ResourceManager.GetObject("CAPA-CONCRETO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAPA_CONTRAP {
+            get {
+                object obj = ResourceManager.GetObject("CAPA-CONTRAP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAPA_PISO {
+            get {
+                object obj = ResourceManager.GetObject("CAPA-PISO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAPA_TELHAS {
+            get {
+                object obj = ResourceManager.GetObject("CAPA-TELHAS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap francesa {
             get {
                 object obj = ResourceManager.GetObject("francesa", resourceCulture);
