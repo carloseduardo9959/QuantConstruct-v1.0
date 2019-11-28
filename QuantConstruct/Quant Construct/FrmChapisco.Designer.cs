@@ -275,6 +275,7 @@
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmChapisco";
             this.Text = "Chapisco";
             this.Load += new System.EventHandler(this.FrmChapisco_Load);

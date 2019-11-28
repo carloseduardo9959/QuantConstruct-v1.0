@@ -282,6 +282,7 @@
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPiso";
             this.Text = "Piso";
             this.Load += new System.EventHandler(this.FrmPiso_Load);

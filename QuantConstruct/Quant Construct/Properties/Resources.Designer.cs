@@ -93,6 +93,26 @@ namespace Quant_Construct.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CApa_chapisco1 {
+            get {
+                object obj = ResourceManager.GetObject("CApa_chapisco1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Capa_concreto1 {
+            get {
+                object obj = ResourceManager.GetObject("Capa_concreto1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CAPA_CONTRAP {
             get {
                 object obj = ResourceManager.GetObject("CAPA-CONTRAP", resourceCulture);

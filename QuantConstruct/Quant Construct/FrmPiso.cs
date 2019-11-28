@@ -68,7 +68,7 @@ namespace Quant_Construct
             Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
-            ev.Graphics.DrawImage(Properties.Resources.CAPA_PISO, 5, -140, 840, 580);
+            ev.Graphics.DrawImage(Properties.Resources.Capa_Pisos_, 5, -140, 840, 580);
 
             //Título 
             /*linha = "Pisos e Revestimentos";

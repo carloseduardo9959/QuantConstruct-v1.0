@@ -605,6 +605,7 @@
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAjuda";
             this.Text = "Informações Importantes";
             this.metroPanel1.ResumeLayout(false);
