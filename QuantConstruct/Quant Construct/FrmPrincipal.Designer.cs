@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.cmdAssentamentoTijolo = new MetroFramework.Controls.MetroTile();
             this.cmdChapisco = new MetroFramework.Controls.MetroTile();
             this.cmdPiso = new MetroFramework.Controls.MetroTile();
@@ -119,9 +120,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Quant_Construct.Properties.Resources.LogoQUant;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(384, 359);
+            this.pictureBox1.Size = new System.Drawing.Size(384, 395);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -139,6 +140,7 @@
             this.Controls.Add(this.cmdPiso);
             this.Controls.Add(this.cmdChapisco);
             this.Controls.Add(this.cmdAssentamentoTijolo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.Theme = MetroFramework.MetroThemeStyle.Light;

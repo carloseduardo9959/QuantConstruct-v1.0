@@ -156,7 +156,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MetroFramework.txt" />
     <None Include="Resources\LogoQUant.png" />
     <None Include="Resources\CAPA-CHAPISCO.png" />
     <None Include="Resources\CAPA-CONCRETO.png" />
@@ -179,6 +178,14 @@
     <None Include="Resources\Img-Tijolos\tijolo_b10201.jpg" />
     <None Include="Resources\Img-Tijolos\tijolo_b10191.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Capa_Pisos_.png" />
+    <None Include="Resources\Capa_Contrapiso.png" />
+    <None Include="Resources\Capa_concreto.png" />
+    <None Include="Resources\CApa_chapisco.png" />
+    <None Include="Resources\CP_Telhas_.png" />
+    <None Include="Resources\Capa_ass_tijolos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

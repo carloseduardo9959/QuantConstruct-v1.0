@@ -67,7 +67,7 @@ namespace Quant_Construct
             Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
-            ev.Graphics.DrawImage(Properties.Resources.CAPA_CONCRETO, 5, -140, 840, 580);
+            //ev.Graphics.DrawImage(Properties.Resources., 5, -140, 840, 580);
 
             //Título 
             /*linha = "Piso de Concreto";

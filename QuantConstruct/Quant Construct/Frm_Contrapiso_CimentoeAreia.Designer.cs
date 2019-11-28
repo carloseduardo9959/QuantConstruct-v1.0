@@ -275,6 +275,7 @@
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Contrapiso_CimentoeAreia";
             this.Text = "Contrapiso de Cimento e Areia";
             this.Load += new System.EventHandler(this.Frm_Contrapiso_CimentoeAreia_Load);

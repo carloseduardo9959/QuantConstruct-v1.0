@@ -394,6 +394,7 @@
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_tijolos_assentamento";
             this.Text = "Assentamento de Tijolos";
             this.Load += new System.EventHandler(this.Frm_tijolos_assentamento_Load);

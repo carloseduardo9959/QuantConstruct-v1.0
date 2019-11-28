@@ -189,6 +189,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblQtdTelha);
             this.Controls.Add(this.btnCalcular);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTelhas";
             this.Text = "Telhas de Barro";
             this.Load += new System.EventHandler(this.FrmTelhas_Load);

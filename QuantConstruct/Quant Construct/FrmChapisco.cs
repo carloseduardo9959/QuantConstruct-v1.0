@@ -66,7 +66,7 @@ namespace Quant_Construct
             Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
-            ev.Graphics.DrawImage(Properties.Resources.CAPA_CHAPISCO, 5, -140, 840, 580);
+            ev.Graphics.DrawImage(Properties.Resources.CApa_chapisco, 5, -140, 840, 580);
 
             //Título 
             /*linha = "Chapisco";

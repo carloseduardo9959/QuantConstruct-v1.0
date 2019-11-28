@@ -98,7 +98,7 @@ namespace Quant_Construct
             Font fonte = new Font("Arial", 16);
             alturaFonte = fonte.GetHeight(ev.Graphics);
 
-            ev.Graphics.DrawImage(Properties.Resources.CAPA_TELHAS, 5, -140, 840, 580);
+            ev.Graphics.DrawImage(Properties.Resources.CP_Telhas_, 5, -140, 840, 580);
 
             //Título 
             /*linha = "Cálculo de Telhas";
@@ -116,12 +116,15 @@ namespace Quant_Construct
                     break;
                 case 1: 
                     linha = "Telha Francesa";
+                    ev.Graphics.DrawImage(Properties.Resources.francesa, 430, 240, 275, 150);
                     break;
                 case 2: 
                     linha = "Telha Portuguesa";
+                    ev.Graphics.DrawImage(Properties.Resources.portuguesa, 430, 240, 275, 150);
                     break;
                 case 3: 
                     linha = "Telha Romana";
+                    ev.Graphics.DrawImage(Properties.Resources.romana, 430, 240, 275, 150);
                     break;
             }
             posicaoVertical = margemSuperior + contador * alturaFonte;

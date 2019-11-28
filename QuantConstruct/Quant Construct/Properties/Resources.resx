@@ -142,11 +142,14 @@
   <data name="CAPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAPA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Capa_ass_tijolos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capa_ass_tijolos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tijolo_b10201" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\tijolo_b10201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Tijolos\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CAPA-TELHAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAPA-TELHAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tijolo_b15291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\tijolo_b15291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,11 +169,17 @@
   <data name="portuguesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Telhas\portuguesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="material-de-construcao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Tijolos\material-de-construcao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img-Tijolos\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CP_Telhas_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CP_Telhas_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoQUant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoQUant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="francesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Telhas\francesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,10 +187,19 @@
   <data name="CAPA-CHAPISCO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAPA-CHAPISCO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CAPA-TELHAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAPA-TELHAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Tijolos\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoQUant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoQUant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CApa_chapisco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CApa_chapisco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capa_concreto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capa_concreto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capa_Contrapiso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capa_Contrapiso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capa_Pisos_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capa_Pisos_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

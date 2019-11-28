@@ -19,7 +19,7 @@ namespace Quant_Construct.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -83,19 +83,9 @@ namespace Quant_Construct.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CAPA_CHAPISCO {
+        internal static System.Drawing.Bitmap Capa_ass_tijolos {
             get {
-                object obj = ResourceManager.GetObject("CAPA-CHAPISCO", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CAPA_CONCRETO {
-            get {
-                object obj = ResourceManager.GetObject("CAPA-CONCRETO", resourceCulture);
+                object obj = ResourceManager.GetObject("Capa_ass_tijolos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +103,16 @@ namespace Quant_Construct.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Capa_Contrapiso {
+            get {
+                object obj = ResourceManager.GetObject("Capa_Contrapiso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CAPA_PISO {
             get {
                 object obj = ResourceManager.GetObject("CAPA-PISO", resourceCulture);
@@ -123,9 +123,29 @@ namespace Quant_Construct.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Capa_Pisos_ {
+            get {
+                object obj = ResourceManager.GetObject("Capa_Pisos_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CAPA_TELHAS {
             get {
                 object obj = ResourceManager.GetObject("CAPA-TELHAS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CP_Telhas_ {
+            get {
+                object obj = ResourceManager.GetObject("CP_Telhas_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
