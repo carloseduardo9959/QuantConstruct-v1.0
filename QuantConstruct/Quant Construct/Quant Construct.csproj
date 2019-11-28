@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\LogoQUant.png" />
     <None Include="Resources\CAPA-CHAPISCO.png" />
     <None Include="Resources\CAPA-CONCRETO.png" />
     <None Include="Resources\CAPA-CONTRAP.png" />

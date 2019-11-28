@@ -53,5 +53,10 @@ namespace Quant_Construct
             FrmTelhas Tl = new FrmTelhas();
             Tl.ShowDialog();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

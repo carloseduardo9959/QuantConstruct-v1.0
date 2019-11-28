@@ -34,12 +34,14 @@
             this.cmdContrapiso = new MetroFramework.Controls.MetroTile();
             this.cmdPisoConcreto = new MetroFramework.Controls.MetroTile();
             this.cmdTelha = new MetroFramework.Controls.MetroTile();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdAssentamentoTijolo
             // 
             this.cmdAssentamentoTijolo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdAssentamentoTijolo.Location = new System.Drawing.Point(36, 113);
+            this.cmdAssentamentoTijolo.Location = new System.Drawing.Point(435, 94);
             this.cmdAssentamentoTijolo.Name = "cmdAssentamentoTijolo";
             this.cmdAssentamentoTijolo.Size = new System.Drawing.Size(253, 68);
             this.cmdAssentamentoTijolo.TabIndex = 1;
@@ -52,7 +54,7 @@
             // cmdChapisco
             // 
             this.cmdChapisco.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdChapisco.Location = new System.Drawing.Point(36, 189);
+            this.cmdChapisco.Location = new System.Drawing.Point(435, 170);
             this.cmdChapisco.Name = "cmdChapisco";
             this.cmdChapisco.Size = new System.Drawing.Size(178, 68);
             this.cmdChapisco.TabIndex = 2;
@@ -65,7 +67,7 @@
             // cmdPiso
             // 
             this.cmdPiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPiso.Location = new System.Drawing.Point(294, 113);
+            this.cmdPiso.Location = new System.Drawing.Point(693, 94);
             this.cmdPiso.Name = "cmdPiso";
             this.cmdPiso.Size = new System.Drawing.Size(106, 68);
             this.cmdPiso.TabIndex = 3;
@@ -78,7 +80,7 @@
             // cmdContrapiso
             // 
             this.cmdContrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdContrapiso.Location = new System.Drawing.Point(222, 189);
+            this.cmdContrapiso.Location = new System.Drawing.Point(621, 170);
             this.cmdContrapiso.Name = "cmdContrapiso";
             this.cmdContrapiso.Size = new System.Drawing.Size(178, 68);
             this.cmdContrapiso.TabIndex = 4;
@@ -91,7 +93,7 @@
             // cmdPisoConcreto
             // 
             this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPisoConcreto.Location = new System.Drawing.Point(36, 269);
+            this.cmdPisoConcreto.Location = new System.Drawing.Point(435, 250);
             this.cmdPisoConcreto.Name = "cmdPisoConcreto";
             this.cmdPisoConcreto.Size = new System.Drawing.Size(212, 68);
             this.cmdPisoConcreto.TabIndex = 5;
@@ -104,7 +106,7 @@
             // cmdTelha
             // 
             this.cmdTelha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdTelha.Location = new System.Drawing.Point(253, 269);
+            this.cmdTelha.Location = new System.Drawing.Point(652, 250);
             this.cmdTelha.Name = "cmdTelha";
             this.cmdTelha.Size = new System.Drawing.Size(147, 68);
             this.cmdTelha.TabIndex = 6;
@@ -114,21 +116,34 @@
             this.cmdTelha.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.cmdTelha.Click += new System.EventHandler(this.cmdTelha_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Quant_Construct.Properties.Resources.LogoQUant;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(384, 359);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(442, 389);
+            this.ClientSize = new System.Drawing.Size(833, 419);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmdTelha);
             this.Controls.Add(this.cmdPisoConcreto);
             this.Controls.Add(this.cmdContrapiso);
             this.Controls.Add(this.cmdPiso);
             this.Controls.Add(this.cmdChapisco);
             this.Controls.Add(this.cmdAssentamentoTijolo);
+            this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
-            this.Text = "Quant Construct";
             this.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -140,6 +155,7 @@
         private MetroFramework.Controls.MetroTile cmdContrapiso;
         private MetroFramework.Controls.MetroTile cmdPisoConcreto;
         private MetroFramework.Controls.MetroTile cmdTelha;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
