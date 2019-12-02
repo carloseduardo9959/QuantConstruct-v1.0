@@ -81,11 +81,11 @@
             // cmdContrapiso
             // 
             this.cmdContrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdContrapiso.Location = new System.Drawing.Point(621, 170);
+            this.cmdContrapiso.Location = new System.Drawing.Point(435, 250);
             this.cmdContrapiso.Name = "cmdContrapiso";
-            this.cmdContrapiso.Size = new System.Drawing.Size(178, 68);
+            this.cmdContrapiso.Size = new System.Drawing.Size(211, 68);
             this.cmdContrapiso.TabIndex = 4;
-            this.cmdContrapiso.Text = "Contrapiso";
+            this.cmdContrapiso.Text = "Regularização do piso";
             this.cmdContrapiso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cmdContrapiso.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.cmdContrapiso.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -94,11 +94,11 @@
             // cmdPisoConcreto
             // 
             this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPisoConcreto.Location = new System.Drawing.Point(435, 250);
+            this.cmdPisoConcreto.Location = new System.Drawing.Point(619, 170);
             this.cmdPisoConcreto.Name = "cmdPisoConcreto";
-            this.cmdPisoConcreto.Size = new System.Drawing.Size(212, 68);
+            this.cmdPisoConcreto.Size = new System.Drawing.Size(180, 68);
             this.cmdPisoConcreto.TabIndex = 5;
-            this.cmdPisoConcreto.Text = "Piso Concreto";
+            this.cmdPisoConcreto.Text = "Contrapiso";
             this.cmdPisoConcreto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cmdPisoConcreto.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.cmdPisoConcreto.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
