@@ -62,9 +62,9 @@
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(23, 60);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(433, 38);
+            this.metroLabel2.Size = new System.Drawing.Size(219, 38);
             this.metroLabel2.TabIndex = 26;
-            this.metroLabel2.Text = " - Espessura de 3 mm para chapisco fino e  5 mm para chapisco grosso.\r\n";
+            this.metroLabel2.Text = " - Espessura de chapisco: 3 a 5 mm.\r\n";
             // 
             // btnCalcular
             // 

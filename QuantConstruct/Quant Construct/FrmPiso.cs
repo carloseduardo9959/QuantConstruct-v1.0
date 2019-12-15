@@ -31,8 +31,10 @@ namespace Quant_Construct
             lblQtdAgamassa.Text = argamassa.ToString("0");
 
             //*****CALCULO REJUNTE*****
-            double rejunte = piso / 3.5;
-            lblQtdRejunte.Text = rejunte.ToString("0");
+            
+            double rejunte = ((double.Parse(txtLPiso.Text) + double.Parse(txtCPiso.Text)) * double.Parse(txtAPiso.Text) * double.Parse(txtEspacamento.Text) * 1.58) / (double.Parse(txtLPiso.Text) * double.Parse(txtCPiso.Text));
+            double Rf = rejunte * piso;
+            lblQtdRejunte.Text = Rf.ToString("0.00");
             pcbxImpressao.Enabled = true;
         }
 
@@ -128,6 +130,16 @@ namespace Quant_Construct
             linha = "Rejunte: " + lblQtdRejunte.Text.ToString() + " kg";
             posicaoVertical = margemSuperior + contador * alturaFonte;
             ev.Graphics.DrawString(linha, fonte, Brushes.Black, margemEsquerda, posicaoVertical);
+
+        }
+
+        private void metroPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void metroLabel7_Click(object sender, EventArgs e)
+        {
 
         }
     }
