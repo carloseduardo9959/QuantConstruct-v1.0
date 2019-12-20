@@ -54,9 +54,12 @@ namespace Quant_Construct
             Tl.ShowDialog();
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
+        
 
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            frmLaje lj = new frmLaje();
+            lj.ShowDialog();
         }
     }
 }

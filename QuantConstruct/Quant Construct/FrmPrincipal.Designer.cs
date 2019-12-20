@@ -36,13 +36,15 @@
             this.cmdPisoConcreto = new MetroFramework.Controls.MetroTile();
             this.cmdTelha = new MetroFramework.Controls.MetroTile();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdAssentamentoTijolo
             // 
             this.cmdAssentamentoTijolo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdAssentamentoTijolo.Location = new System.Drawing.Point(435, 94);
+            this.cmdAssentamentoTijolo.Location = new System.Drawing.Point(439, 63);
             this.cmdAssentamentoTijolo.Name = "cmdAssentamentoTijolo";
             this.cmdAssentamentoTijolo.Size = new System.Drawing.Size(253, 68);
             this.cmdAssentamentoTijolo.TabIndex = 1;
@@ -55,7 +57,7 @@
             // cmdChapisco
             // 
             this.cmdChapisco.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdChapisco.Location = new System.Drawing.Point(435, 170);
+            this.cmdChapisco.Location = new System.Drawing.Point(439, 137);
             this.cmdChapisco.Name = "cmdChapisco";
             this.cmdChapisco.Size = new System.Drawing.Size(178, 68);
             this.cmdChapisco.TabIndex = 2;
@@ -68,7 +70,7 @@
             // cmdPiso
             // 
             this.cmdPiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPiso.Location = new System.Drawing.Point(693, 94);
+            this.cmdPiso.Location = new System.Drawing.Point(697, 63);
             this.cmdPiso.Name = "cmdPiso";
             this.cmdPiso.Size = new System.Drawing.Size(106, 68);
             this.cmdPiso.TabIndex = 3;
@@ -81,7 +83,7 @@
             // cmdContrapiso
             // 
             this.cmdContrapiso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdContrapiso.Location = new System.Drawing.Point(435, 250);
+            this.cmdContrapiso.Location = new System.Drawing.Point(439, 211);
             this.cmdContrapiso.Name = "cmdContrapiso";
             this.cmdContrapiso.Size = new System.Drawing.Size(211, 68);
             this.cmdContrapiso.TabIndex = 4;
@@ -94,7 +96,7 @@
             // cmdPisoConcreto
             // 
             this.cmdPisoConcreto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdPisoConcreto.Location = new System.Drawing.Point(619, 170);
+            this.cmdPisoConcreto.Location = new System.Drawing.Point(623, 137);
             this.cmdPisoConcreto.Name = "cmdPisoConcreto";
             this.cmdPisoConcreto.Size = new System.Drawing.Size(180, 68);
             this.cmdPisoConcreto.TabIndex = 5;
@@ -107,7 +109,7 @@
             // cmdTelha
             // 
             this.cmdTelha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdTelha.Location = new System.Drawing.Point(652, 250);
+            this.cmdTelha.Location = new System.Drawing.Point(656, 211);
             this.cmdTelha.Name = "cmdTelha";
             this.cmdTelha.Size = new System.Drawing.Size(147, 68);
             this.cmdTelha.TabIndex = 6;
@@ -127,12 +129,39 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // metroTile1
+            // 
+            this.metroTile1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile1.Location = new System.Drawing.Point(439, 285);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(180, 68);
+            this.metroTile1.TabIndex = 8;
+            this.metroTile1.Text = "Laje";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile2.Location = new System.Drawing.Point(625, 285);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(178, 68);
+            this.metroTile2.TabIndex = 9;
+            this.metroTile2.Text = "#";
+            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(833, 419);
+            this.Controls.Add(this.metroTile2);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmdTelha);
             this.Controls.Add(this.cmdPisoConcreto);
@@ -144,7 +173,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -158,6 +186,8 @@
         private MetroFramework.Controls.MetroTile cmdPisoConcreto;
         private MetroFramework.Controls.MetroTile cmdTelha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile metroTile2;
     }
 }
 

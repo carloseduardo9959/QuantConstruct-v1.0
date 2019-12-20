@@ -63,15 +63,18 @@
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(66, 132);
+            this.metroLabel1.Location = new System.Drawing.Point(3, 62);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(148, 19);
             this.metroLabel1.TabIndex = 0;
@@ -80,7 +83,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(66, 168);
+            this.metroLabel2.Location = new System.Drawing.Point(3, 91);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(117, 19);
             this.metroLabel2.TabIndex = 0;
@@ -89,7 +92,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(66, 204);
+            this.metroLabel3.Location = new System.Drawing.Point(3, 120);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(129, 19);
             this.metroLabel3.TabIndex = 0;
@@ -98,7 +101,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(66, 261);
+            this.metroLabel4.Location = new System.Drawing.Point(3, 149);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(108, 19);
             this.metroLabel4.TabIndex = 0;
@@ -107,7 +110,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(66, 297);
+            this.metroLabel5.Location = new System.Drawing.Point(6, 180);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(105, 19);
             this.metroLabel5.TabIndex = 0;
@@ -115,35 +118,35 @@
             // 
             // txtCimento
             // 
-            this.txtCimento.Location = new System.Drawing.Point(215, 132);
+            this.txtCimento.Location = new System.Drawing.Point(157, 58);
             this.txtCimento.Name = "txtCimento";
             this.txtCimento.Size = new System.Drawing.Size(75, 23);
             this.txtCimento.TabIndex = 1;
             // 
             // txtCal
             // 
-            this.txtCal.Location = new System.Drawing.Point(215, 168);
+            this.txtCal.Location = new System.Drawing.Point(157, 87);
             this.txtCal.Name = "txtCal";
             this.txtCal.Size = new System.Drawing.Size(75, 23);
             this.txtCal.TabIndex = 2;
             // 
             // txtAreia
             // 
-            this.txtAreia.Location = new System.Drawing.Point(215, 204);
+            this.txtAreia.Location = new System.Drawing.Point(157, 116);
             this.txtAreia.Name = "txtAreia";
             this.txtAreia.Size = new System.Drawing.Size(75, 23);
             this.txtAreia.TabIndex = 3;
             // 
             // txtJunta
             // 
-            this.txtJunta.Location = new System.Drawing.Point(215, 261);
+            this.txtJunta.Location = new System.Drawing.Point(157, 145);
             this.txtJunta.Name = "txtJunta";
             this.txtJunta.Size = new System.Drawing.Size(75, 23);
             this.txtJunta.TabIndex = 4;
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(215, 297);
+            this.txtArea.Location = new System.Drawing.Point(157, 176);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(75, 23);
             this.txtArea.TabIndex = 5;
@@ -277,7 +280,7 @@
             // 
             // cmdCalcular
             // 
-            this.cmdCalcular.Location = new System.Drawing.Point(108, 343);
+            this.cmdCalcular.Location = new System.Drawing.Point(215, 366);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(135, 32);
             this.cmdCalcular.TabIndex = 6;
@@ -306,7 +309,7 @@
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(293, 301);
+            this.metroLabel10.Location = new System.Drawing.Point(238, 180);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(28, 19);
             this.metroLabel10.TabIndex = 10;
@@ -315,7 +318,7 @@
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(293, 265);
+            this.metroLabel11.Location = new System.Drawing.Point(238, 154);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(27, 19);
             this.metroLabel11.TabIndex = 10;
@@ -324,7 +327,7 @@
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(23, 60);
+            this.metroLabel12.Location = new System.Drawing.Point(23, 71);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(212, 19);
             this.metroLabel12.TabIndex = 11;
@@ -333,7 +336,7 @@
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(23, 79);
+            this.metroLabel13.Location = new System.Drawing.Point(23, 90);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(352, 19);
             this.metroLabel13.TabIndex = 11;
@@ -342,7 +345,7 @@
             // metroLabel15
             // 
             this.metroLabel15.AutoSize = true;
-            this.metroLabel15.Location = new System.Drawing.Point(411, 60);
+            this.metroLabel15.Location = new System.Drawing.Point(411, 71);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(286, 19);
             this.metroLabel15.TabIndex = 11;
@@ -351,7 +354,7 @@
             // metroLabel16
             // 
             this.metroLabel16.AutoSize = true;
-            this.metroLabel16.Location = new System.Drawing.Point(411, 79);
+            this.metroLabel16.Location = new System.Drawing.Point(411, 90);
             this.metroLabel16.Name = "metroLabel16";
             this.metroLabel16.Size = new System.Drawing.Size(288, 19);
             this.metroLabel16.TabIndex = 11;
@@ -366,34 +369,61 @@
             this.metroButton1.Text = "Ajuda";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel1.Controls.Add(this.metroTile1);
+            this.metroPanel1.Controls.Add(this.metroLabel1);
+            this.metroPanel1.Controls.Add(this.txtCimento);
+            this.metroPanel1.Controls.Add(this.metroLabel2);
+            this.metroPanel1.Controls.Add(this.metroLabel10);
+            this.metroPanel1.Controls.Add(this.metroLabel11);
+            this.metroPanel1.Controls.Add(this.txtCal);
+            this.metroPanel1.Controls.Add(this.metroLabel3);
+            this.metroPanel1.Controls.Add(this.txtAreia);
+            this.metroPanel1.Controls.Add(this.metroLabel4);
+            this.metroPanel1.Controls.Add(this.txtJunta);
+            this.metroPanel1.Controls.Add(this.metroLabel5);
+            this.metroPanel1.Controls.Add(this.txtArea);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(23, 142);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(330, 218);
+            this.metroPanel1.TabIndex = 30;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.Location = new System.Drawing.Point(3, 3);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(323, 41);
+            this.metroTile1.TabIndex = 2;
+            this.metroTile1.Text = "Dados:";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            // 
             // Frm_tijolos_assentamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 557);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel16);
             this.Controls.Add(this.metroLabel15);
             this.Controls.Add(this.metroLabel12);
-            this.Controls.Add(this.metroLabel11);
-            this.Controls.Add(this.metroLabel10);
             this.Controls.Add(this.cmdLimpar);
             this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.metroLabel14);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroComboBox1);
-            this.Controls.Add(this.txtArea);
-            this.Controls.Add(this.txtJunta);
-            this.Controls.Add(this.txtAreia);
-            this.Controls.Add(this.txtCal);
-            this.Controls.Add(this.txtCimento);
-            this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_tijolos_assentamento";
             this.Text = "Assentamento de Tijolos";
@@ -402,6 +432,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxImpressao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,5 +474,7 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.PictureBox pcbxImpressao;
         private System.Windows.Forms.ToolTip toolTip1;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }
